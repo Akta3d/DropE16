@@ -1,15 +1,14 @@
 # Intro
 DropE16 is a [TouchOSC](https://hexler.net/touchosc) MIDI Controller.
 
-![DropE16](/doc-assets/DropE16.png)
+<img width="1469" height="969" alt="DropE16" src="/doc-assets/DropE16.png" />
 
 ## Demo
+<img width="1468" height="974" alt="Interface" src="/doc-assets/Demo.gif" />
 
-[![Watch the video](/doc-assets/DropE16.png)](/doc-assets/Demo.mp4)
 
 ## Interface
-
-![DropE16](/doc-assets/Interface.png)
+<img width="2190" height="1165" alt="DropE16" src="/doc-assets/Interface.png" />
 
 ## Motivation
 
@@ -106,7 +105,8 @@ Examples:
 - Instant load after 2 measures: `duration = 0`, `delay = 2`
 - Wait 4 measures, then morph over 2 measures: `duration = 2`, `delay = 4`
 
-[![Watch the video](/doc-assets/DropE16.png)](/doc-assets/Snapshot.mp4)
+<img width="1468" height="974" alt="Interface" src="/doc-assets/Snapshot.gif" />
+
 
 ## Use Macros
 
@@ -115,7 +115,8 @@ Examples:
 - Single-click a button to assign the radial to the macro
 - Double-click a button to invert the control value
 
-[![Watch the video](/doc-assets/DropE16.png)](/doc-assets/Macro.mp4)
+<img width="1468" height="974" alt="Interface" src="/doc-assets/Macro.gif" />
+
 
 ## Set BPM
 
@@ -141,7 +142,7 @@ If you need to store multiple configurations, you can save them using a text edi
 - Copy the log starting from `## Page 1 ...`
 - Paste it into a text file and save it
 
-![Save log](/doc-assets/SaveLog.png)
+<img width="1468" height="973" alt="SaveLog" src="/doc-assets/SaveLog.png" />
 
 ### Restore a Configuration
 
@@ -151,7 +152,7 @@ If you need to store multiple configurations, you can save them using a text edi
 - Restart DropE16
 - Open the settings dialog and click **Load**
 
-![Load log](/doc-assets/LoadLog.png)
+<img width="1466" height="969" alt="LoadLog" src="/doc-assets/LoadLog.png" />
 
 This process saves, for each page:
 
