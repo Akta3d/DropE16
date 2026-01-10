@@ -18,7 +18,7 @@ After discovering TouchOSC, I decided to develop this project as a software alte
 This project is largely inspired by:
 
 - [OXI E16](https://oxiinstruments.com/oxi-e16)
-- [Drop](https://www.neuzeit-instruments.com/Drop)
+- [Neuzeit Instruments Drop](https://www.neuzeit-instruments.com/Drop)
 
 ## Features
 
@@ -133,6 +133,16 @@ Before quitting TouchOSC, make sure to **save your template** to keep all settin
 ## Save Multiple Configurations Using “Logs”
 
 If you need to store multiple configurations, you can save them using a text editor.
+Here is what is saved:
+- Page name and color
+- For each page
+  - Radials
+    - Radials: color
+    - Labels: Text and color
+  - Snapshot values
+  - Macro values
+
+Note: The MIDI configuration (channel and controller) cannot be saved. We recommend saving different versions of this layout if you want to have different configurations. Or add pages for all your configurations.
 
 ### Save a Configuration
 
@@ -236,10 +246,16 @@ Manages:
 Handles tap tempo and LED blinking.  
 The variables `bpm` and `bpmStartTime` are sent to the document to calculate snapshot duration and delay.
 
+### Group settings
+
+Handle functions to load and save from logs.
+Functions are called with notify and onReceiveNotify
+
 ### Save Button
 
-Outputs all component values to the log view.
+Call the `save` function in `groupSettings`
 
 ### Load Button
 
-Restores component values from a previously saved log
+Restores component values from a previously saved log.
+The button contains the logs to reload then call the `load` function in `groupSettings`
