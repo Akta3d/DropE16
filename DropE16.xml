@@ -34926,6 +34926,747 @@ end]]></value>
 </node>
 </children>
 </node>
+<node ID='697fd9e6-ef47-11f0-ab48-2c33580a447a' type='GROUP'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>0</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>0.25</r>
+<g>0.25</g>
+<b>0.25</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>860</x>
+<y>395</y>
+<w>40</w>
+<h>105</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[groupRecord]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[script]]></key>
+<value><![CDATA[local _ABRUPT_CHANGE_FILTER_ENABELD = false;
+
+local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
+local _playEnabled = false;
+local _recordEnabled = false;      -- record is enabled, but we want wait a first controller change to start really the record
+local _recordArmed = false; -- record is enabled and a controller value has changed
+local _frameIndex = 1;
+local _frames = {}; -- array of array [frameIndex][frame] a frame is all components value for an instant T
+
+local _stopButton = self.children.buttonRecord;
+local _playButton = self.children.buttonPlay;
+local _progressBarComponent = self.children.boxProgressBar;
+local _progressBarHeight = self.children.boxProgressBarHeight.frame.h;
+
+local _components = self.parent.children.groupRadial:findAllByType(ControlType.RADIAL);
+
+local _lastComponentsValue = {}; -- store last components value. Used to detect when armed recording. And used to don't touch component value if not changed
+
+local _abruptFilterMaxLength = 8;
+local _abruptLastComponentsValue = {}; -- used if _ABRUPT_CHANGE_FILTER_ENABELD. Store on all components last _abruptFilterMaxLength values (different of -1)
+local _abruptThreshold = 0.4;  -- threshold to consider new Value as a non abrupt value
+
+function onReceiveNotify(action, value)
+  if(action == 'startRecord') then
+    startRecord();
+  elseif(action == 'stopRecord') then
+    stopRecord();
+  elseif(action == 'startPlay') then
+    startPlay();
+  elseif(action == 'stopPlay') then
+    stopPlay();
+  end
+end
+
+function startRecord()
+  print('startRecord');
+  _recordEnabled = true;
+  _recordArmed = false;
+  
+  saveLastComponentsValue();  
+end
+
+
+function stopRecord()
+  print('stopRecord');
+  _recordEnabled = false;
+  _recordArmed = false;
+  
+  _stopButton.values.x = 0;
+  
+  
+  -- clean all last values of _frames. We want only keep frames that have change
+  if(#_frames > 1) then       
+  
+    -- clean frames having only -1 values
+    for i = #_frames - 1, 1, -1 do
+      local currentFrame = _frames[i];
+      
+      local allValueUnset = true;
+      for j=1, #currentFrame do
+        if(currentFrame[j] ~= -1) then
+          allValueUnset = false;
+          break;
+        end
+      end
+
+      
+      if(allValueUnset) then             
+        table.remove(_frames, i + 1);
+      else
+        break;
+      end
+    end
+
+  end
+end
+
+
+function startPlay()
+  print('startPlay');
+  stopRecord();
+  
+  _frameIndex = 1;
+  saveLastComponentsValue();
+  
+  if(#_frames >= 1) then
+    _playEnabled = true;
+  else
+    _playButton.values.x = 0;
+  end
+end
+
+
+function stopPlay()
+  print('stopPlay');
+  stopRecord();
+  _playEnabled = false;
+  
+  _progressBarComponent.frame.h = 0 ;
+end
+
+
+function update()
+  if(_recordEnabled and (not _recordArmed) and (not _playEnabled)) then
+    checkRecordArmed();
+  end
+  
+  if(_recordArmed) then
+    record();
+  end
+  
+  if(_playEnabled) then
+    play();
+  end
+end
+
+
+function checkRecordArmed()
+  -- check all components value to see if a component value has changed
+  local frame = {};
+  for i=1, #_components do
+    local currentValue = _components[i].values.x;
+    local previousValue = _lastComponentsValue[i];
+    if(previousValue ~= currentValue) then
+      _recordEnabled = false;
+      _recordArmed = true;
+      _frames = {};
+      print('recordArmed');
+    end
+  end
+  
+  table.insert(_frames, frame);
+end
+
+
+function record()
+  -- save components value
+  local frame = {};
+  for i=1, #_components do
+    local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;  
+    local doRecord = valueHasChanged;
+    
+    if(doRecord) then
+      table.insert(frame, _components[i].values.x);
+      _lastComponentsValue[i] = _components[i].values.x;
+    else
+      table.insert(frame, -1);
+    end
+  end
+  
+  table.insert(_frames, frame);  
+  
+  if(#_frames > _maxNbFrames) then
+    stopRecord();
+  end
+end
+
+
+function play()
+  local frame = _frames[_frameIndex];
+  for i=1, #frame do
+    local currentValue = _components[i].values.x;
+    local lastValue = _lastComponentsValue[i];
+    local newValue = frame[i];
+    
+    --check if record is activate to overwrite values
+    local doRecord = _recordEnabled;
+    if(doRecord) then  
+      local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;
+      doRecord = valueHasChanged;      
+      if(doRecord) then
+       doRecord = doAbruptChangeFilter(i, newValue);
+       insertInAbruptFilter(i, newValue);
+      end
+    end
+  
+    
+    if(doRecord) then 
+      -- overwrite value
+      frame[i] = currentValue;
+      _lastComponentsValue[i] = currentValue; 
+    elseif(newValue ~= -1 and newValue ~= lastValue) then
+      -- set component value
+      _components[i].values.x = newValue;
+      _lastComponentsValue[i] = newValue;
+      insertInAbruptFilter(i, newValue);
+    end    
+  end
+
+  -- change _frameIndex to loop  
+  _frameIndex = _frameIndex + 1;
+  if(_frameIndex > #_frames) then
+    _frameIndex = 1;
+  end  
+  
+  -- update progress bar
+  _progressBarComponent.frame.h = _progressBarHeight * (_frameIndex / #_frames);  
+end
+
+
+-- HELPERS
+function saveLastComponentsValue()
+  -- save all components value to check when armed the recording
+  _lastComponentsValue = {};
+  for i=1, #_components do
+    table.insert(_lastComponentsValue, _components[i].values.x);
+  end
+end
+
+
+function doAbruptChangeFilter(componentIndex, newValue)
+  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
+    return true;
+  end
+  
+  local averageValue = average(_abruptLastComponentsValue[componentIndex]);
+  if(not averageValue) then
+    -- averabe can't be compouted _abruptLastComponentsValue is nil or empty => allow newValue
+    return true;
+  end
+  
+  local allowValue = math.abs(averageValue - newValue) < _abruptThreshold;
+  
+  if(componentIndex == 12) then
+    -- print(allowValue, newValue, 'componentIndex', componentIndex, '#_abruptLastComponentsValue', #_abruptLastComponentsValue[componentIndex], 'averageValue', averageValue, 'values', table.concat(_abruptLastComponentsValue[componentIndex], ', '));
+  end
+  return allowValue;
+end
+
+
+
+function insertInAbruptFilter(componentIndex, newValue)
+  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
+    return;
+  end
+  
+  if(newValue == -1) then
+    return;
+  end
+  
+  if(not _abruptLastComponentsValue[componentIndex]) then
+    _abruptLastComponentsValue[componentIndex] = {};
+  end
+  
+  table.insert(_abruptLastComponentsValue[componentIndex], newValue);
+  if(#_abruptLastComponentsValue[componentIndex] > _abruptFilterMaxLength) then
+    table.remove(_abruptLastComponentsValue[componentIndex], 1);
+  end
+end
+
+
+function average(t)
+  local result = nil; -- or 0
+  if(not t) then
+    return result;
+  end
+  
+  local sum = 0;
+  local count = 0;
+
+  for _, v in ipairs(t) do
+      sum = sum + v;
+      count = count + 1;
+  end
+
+  if count == 0 then
+      return result;
+  end
+
+  return sum / count;
+end]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+<children>
+<node ID='697fda36-ef47-11f0-bdc1-2c33580a447a' type='BUTTON'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[buttonType]]></key>
+<value>1</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>1</r>
+<g>0</g>
+<b>0</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>1</x>
+<y>6</y>
+<w>25</w>
+<h>25</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[buttonRecord]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[press]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[release]]></key>
+<value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[script]]></key>
+<value><![CDATA[function onValueChanged(key)
+  if(key ~= 'x') then return end
+  
+  if(self.values.x == 1) then
+    self.parent:notify('startRecord', {self.ID});
+  else
+    self.parent:notify('stopRecord', {self.ID});
+  end
+end]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>2</value>
+</property>
+<property type='b'>
+<key><![CDATA[valuePosition]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[x]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[0]]></default>
+<defaultPull>0</defaultPull>
+</value>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+</node>
+<node ID='697ff142-ef47-11f0-ab0e-2c33580a447a' type='BUTTON'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[buttonType]]></key>
+<value>1</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>0.339766</r>
+<g>0.888889</g>
+<b>0</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>-4</x>
+<y>66</y>
+<w>30</w>
+<h>37</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[buttonPlay]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[press]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[release]]></key>
+<value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[script]]></key>
+<value><![CDATA[function onValueChanged(key)
+  if(key ~= 'x') then return end
+  
+  if(self.values.x == 1) then
+    self.parent:notify('startPlay', {self.ID});
+  else
+    self.parent:notify('stopPlay', {self.ID});
+  end
+end]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>3</value>
+</property>
+<property type='b'>
+<key><![CDATA[valuePosition]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[x]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[0]]></default>
+<defaultPull>0</defaultPull>
+</value>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+</node>
+<node ID='69800326-ef47-11f0-8e14-2c33580a447a' type='BOX'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>0</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>1</r>
+<g>0</g>
+<b>0</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>30</x>
+<y>2</y>
+<w>10</w>
+<h>101</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[boxProgressBarHeight]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+</node>
+<node ID='6980034e-ef47-11f0-b35c-2c33580a447a' type='BOX'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>1</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>1</r>
+<g>0.302088</g>
+<b>0.0444444</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>30</x>
+<y>2</y>
+<w>10</w>
+<h>20.0397</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[boxProgressBar]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+</node>
+</children>
+</node>
 </children>
 </node>
 <node ID='aaaca39e-e0c5-11f0-8010-2c33580a447a' type='GROUP'>
@@ -51805,6 +52546,747 @@ end]]></value>
 </values>
 </node>
 </children>
+</node>
+</children>
+</node>
+<node ID='6c6237bc-ef47-11f0-88c8-2c33580a447a' type='GROUP'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>0</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>0.25</r>
+<g>0.25</g>
+<b>0.25</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>860</x>
+<y>395</y>
+<w>40</w>
+<h>105</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[groupRecord]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[script]]></key>
+<value><![CDATA[local _ABRUPT_CHANGE_FILTER_ENABELD = false;
+
+local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
+local _playEnabled = false;
+local _recordEnabled = false;      -- record is enabled, but we want wait a first controller change to start really the record
+local _recordArmed = false; -- record is enabled and a controller value has changed
+local _frameIndex = 1;
+local _frames = {}; -- array of array [frameIndex][frame] a frame is all components value for an instant T
+
+local _stopButton = self.children.buttonRecord;
+local _playButton = self.children.buttonPlay;
+local _progressBarComponent = self.children.boxProgressBar;
+local _progressBarHeight = self.children.boxProgressBarHeight.frame.h;
+
+local _components = self.parent.children.groupRadial:findAllByType(ControlType.RADIAL);
+
+local _lastComponentsValue = {}; -- store last components value. Used to detect when armed recording. And used to don't touch component value if not changed
+
+local _abruptFilterMaxLength = 8;
+local _abruptLastComponentsValue = {}; -- used if _ABRUPT_CHANGE_FILTER_ENABELD. Store on all components last _abruptFilterMaxLength values (different of -1)
+local _abruptThreshold = 0.4;  -- threshold to consider new Value as a non abrupt value
+
+function onReceiveNotify(action, value)
+  if(action == 'startRecord') then
+    startRecord();
+  elseif(action == 'stopRecord') then
+    stopRecord();
+  elseif(action == 'startPlay') then
+    startPlay();
+  elseif(action == 'stopPlay') then
+    stopPlay();
+  end
+end
+
+function startRecord()
+  print('startRecord');
+  _recordEnabled = true;
+  _recordArmed = false;
+  
+  saveLastComponentsValue();  
+end
+
+
+function stopRecord()
+  print('stopRecord');
+  _recordEnabled = false;
+  _recordArmed = false;
+  
+  _stopButton.values.x = 0;
+  
+  
+  -- clean all last values of _frames. We want only keep frames that have change
+  if(#_frames > 1) then       
+  
+    -- clean frames having only -1 values
+    for i = #_frames - 1, 1, -1 do
+      local currentFrame = _frames[i];
+      
+      local allValueUnset = true;
+      for j=1, #currentFrame do
+        if(currentFrame[j] ~= -1) then
+          allValueUnset = false;
+          break;
+        end
+      end
+
+      
+      if(allValueUnset) then             
+        table.remove(_frames, i + 1);
+      else
+        break;
+      end
+    end
+
+  end
+end
+
+
+function startPlay()
+  print('startPlay');
+  stopRecord();
+  
+  _frameIndex = 1;
+  saveLastComponentsValue();
+  
+  if(#_frames >= 1) then
+    _playEnabled = true;
+  else
+    _playButton.values.x = 0;
+  end
+end
+
+
+function stopPlay()
+  print('stopPlay');
+  stopRecord();
+  _playEnabled = false;
+  
+  _progressBarComponent.frame.h = 0 ;
+end
+
+
+function update()
+  if(_recordEnabled and (not _recordArmed) and (not _playEnabled)) then
+    checkRecordArmed();
+  end
+  
+  if(_recordArmed) then
+    record();
+  end
+  
+  if(_playEnabled) then
+    play();
+  end
+end
+
+
+function checkRecordArmed()
+  -- check all components value to see if a component value has changed
+  local frame = {};
+  for i=1, #_components do
+    local currentValue = _components[i].values.x;
+    local previousValue = _lastComponentsValue[i];
+    if(previousValue ~= currentValue) then
+      _recordEnabled = false;
+      _recordArmed = true;
+      _frames = {};
+      print('recordArmed');
+    end
+  end
+  
+  table.insert(_frames, frame);
+end
+
+
+function record()
+  -- save components value
+  local frame = {};
+  for i=1, #_components do
+    local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;  
+    local doRecord = valueHasChanged;
+    
+    if(doRecord) then
+      table.insert(frame, _components[i].values.x);
+      _lastComponentsValue[i] = _components[i].values.x;
+    else
+      table.insert(frame, -1);
+    end
+  end
+  
+  table.insert(_frames, frame);  
+  
+  if(#_frames > _maxNbFrames) then
+    stopRecord();
+  end
+end
+
+
+function play()
+  local frame = _frames[_frameIndex];
+  for i=1, #frame do
+    local currentValue = _components[i].values.x;
+    local lastValue = _lastComponentsValue[i];
+    local newValue = frame[i];
+    
+    --check if record is activate to overwrite values
+    local doRecord = _recordEnabled;
+    if(doRecord) then  
+      local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;
+      doRecord = valueHasChanged;      
+      if(doRecord) then
+       doRecord = doAbruptChangeFilter(i, newValue);
+       insertInAbruptFilter(i, newValue);
+      end
+    end
+  
+    
+    if(doRecord) then 
+      -- overwrite value
+      frame[i] = currentValue;
+      _lastComponentsValue[i] = currentValue; 
+    elseif(newValue ~= -1 and newValue ~= lastValue) then
+      -- set component value
+      _components[i].values.x = newValue;
+      _lastComponentsValue[i] = newValue;
+      insertInAbruptFilter(i, newValue);
+    end    
+  end
+
+  -- change _frameIndex to loop  
+  _frameIndex = _frameIndex + 1;
+  if(_frameIndex > #_frames) then
+    _frameIndex = 1;
+  end  
+  
+  -- update progress bar
+  _progressBarComponent.frame.h = _progressBarHeight * (_frameIndex / #_frames);  
+end
+
+
+-- HELPERS
+function saveLastComponentsValue()
+  -- save all components value to check when armed the recording
+  _lastComponentsValue = {};
+  for i=1, #_components do
+    table.insert(_lastComponentsValue, _components[i].values.x);
+  end
+end
+
+
+function doAbruptChangeFilter(componentIndex, newValue)
+  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
+    return true;
+  end
+  
+  local averageValue = average(_abruptLastComponentsValue[componentIndex]);
+  if(not averageValue) then
+    -- averabe can't be compouted _abruptLastComponentsValue is nil or empty => allow newValue
+    return true;
+  end
+  
+  local allowValue = math.abs(averageValue - newValue) < _abruptThreshold;
+  
+  if(componentIndex == 12) then
+    -- print(allowValue, newValue, 'componentIndex', componentIndex, '#_abruptLastComponentsValue', #_abruptLastComponentsValue[componentIndex], 'averageValue', averageValue, 'values', table.concat(_abruptLastComponentsValue[componentIndex], ', '));
+  end
+  return allowValue;
+end
+
+
+
+function insertInAbruptFilter(componentIndex, newValue)
+  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
+    return;
+  end
+  
+  if(newValue == -1) then
+    return;
+  end
+  
+  if(not _abruptLastComponentsValue[componentIndex]) then
+    _abruptLastComponentsValue[componentIndex] = {};
+  end
+  
+  table.insert(_abruptLastComponentsValue[componentIndex], newValue);
+  if(#_abruptLastComponentsValue[componentIndex] > _abruptFilterMaxLength) then
+    table.remove(_abruptLastComponentsValue[componentIndex], 1);
+  end
+end
+
+
+function average(t)
+  local result = nil; -- or 0
+  if(not t) then
+    return result;
+  end
+  
+  local sum = 0;
+  local count = 0;
+
+  for _, v in ipairs(t) do
+      sum = sum + v;
+      count = count + 1;
+  end
+
+  if count == 0 then
+      return result;
+  end
+
+  return sum / count;
+end]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+<children>
+<node ID='6c6238de-ef47-11f0-989e-2c33580a447a' type='BUTTON'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[buttonType]]></key>
+<value>1</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>1</r>
+<g>0</g>
+<b>0</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>1</x>
+<y>6</y>
+<w>25</w>
+<h>25</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[buttonRecord]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[press]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[release]]></key>
+<value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[script]]></key>
+<value><![CDATA[function onValueChanged(key)
+  if(key ~= 'x') then return end
+  
+  if(self.values.x == 1) then
+    self.parent:notify('startRecord', {self.ID});
+  else
+    self.parent:notify('stopRecord', {self.ID});
+  end
+end]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>2</value>
+</property>
+<property type='b'>
+<key><![CDATA[valuePosition]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[x]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[0]]></default>
+<defaultPull>0</defaultPull>
+</value>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+</node>
+<node ID='6c62a260-ef47-11f0-9789-2c33580a447a' type='BUTTON'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[buttonType]]></key>
+<value>1</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>0.339766</r>
+<g>0.888889</g>
+<b>0</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>-4</x>
+<y>66</y>
+<w>30</w>
+<h>37</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[buttonPlay]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[press]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[release]]></key>
+<value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[script]]></key>
+<value><![CDATA[function onValueChanged(key)
+  if(key ~= 'x') then return end
+  
+  if(self.values.x == 1) then
+    self.parent:notify('startPlay', {self.ID});
+  else
+    self.parent:notify('stopPlay', {self.ID});
+  end
+end]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>3</value>
+</property>
+<property type='b'>
+<key><![CDATA[valuePosition]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[x]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[0]]></default>
+<defaultPull>0</defaultPull>
+</value>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+</node>
+<node ID='6c62eaf4-ef47-11f0-9908-2c33580a447a' type='BOX'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>0</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>1</r>
+<g>0</g>
+<b>0</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>30</x>
+<y>2</y>
+<w>10</w>
+<h>101</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[boxProgressBarHeight]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
+</node>
+<node ID='6c62eb58-ef47-11f0-ada1-2c33580a447a' type='BOX'>
+<properties>
+<property type='b'>
+<key><![CDATA[background]]></key>
+<value>1</value>
+</property>
+<property type='c'>
+<key><![CDATA[color]]></key>
+<value>
+<r>1</r>
+<g>0.302088</g>
+<b>0.0444444</b>
+<a>1</a>
+</value>
+</property>
+<property type='f'>
+<key><![CDATA[cornerRadius]]></key>
+<value>1</value>
+</property>
+<property type='r'>
+<key><![CDATA[frame]]></key>
+<value>
+<x>30</x>
+<y>2</y>
+<w>10</w>
+<h>20.0397</h>
+</value>
+</property>
+<property type='b'>
+<key><![CDATA[grabFocus]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[interactive]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[locked]]></key>
+<value>0</value>
+</property>
+<property type='s'>
+<key><![CDATA[name]]></key>
+<value><![CDATA[boxProgressBar]]></value>
+</property>
+<property type='i'>
+<key><![CDATA[orientation]]></key>
+<value>0</value>
+</property>
+<property type='b'>
+<key><![CDATA[outline]]></key>
+<value>1</value>
+</property>
+<property type='i'>
+<key><![CDATA[outlineStyle]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[pointerPriority]]></key>
+<value>0</value>
+</property>
+<property type='i'>
+<key><![CDATA[shape]]></key>
+<value>1</value>
+</property>
+<property type='b'>
+<key><![CDATA[visible]]></key>
+<value>1</value>
+</property>
+</properties>
+<values>
+<value>
+<key><![CDATA[touch]]></key>
+<locked>0</locked>
+<lockedDefaultCurrent>0</lockedDefaultCurrent>
+<default><![CDATA[false]]></default>
+<defaultPull>0</defaultPull>
+</value>
+</values>
 </node>
 </children>
 </node>
