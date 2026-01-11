@@ -35611,7 +35611,7 @@ end]]></value>
 <x>30</x>
 <y>2</y>
 <w>10</w>
-<h>20.0397</h>
+<h>0</h>
 </value>
 </property>
 <property type='b'>
@@ -53234,7 +53234,7 @@ end]]></value>
 <x>30</x>
 <y>2</y>
 <w>10</w>
-<h>20.0397</h>
+<h>0</h>
 </value>
 </property>
 <property type='b'>
@@ -53600,7 +53600,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[117]]></default>
+<default><![CDATA[120]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -53626,8 +53626,8 @@ end]]></value>
 <key><![CDATA[color]]></key>
 <value>
 <r>1</r>
-<g>1</g>
-<b>1</b>
+<g>0.77</g>
+<b>0.65</b>
 <a>1</a>
 </value>
 </property>
@@ -53694,13 +53694,9 @@ local _bpmStartMs = getMillis();
 
     
 local _flash_ms = 120;        -- flash duration (ms)
-local _baseColor = Color(self.color);
-local _flashColor = Color(
-    math.min(_baseColor.r * 1.8, 1.0),
-    math.min(_baseColor.g * 1.8, 1.0),
-    math.min(_baseColor.b * 1.8, 1.0),
-    _baseColor.a
-  );
+local _baseColor = Color(1,0.77,0.65,1);
+local _flashColor = Color(1,0.48,0.28,1);
+
 
 function init()
   root:notify('setBpm', {_bpm, _bpmStartMs});
