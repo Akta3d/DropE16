@@ -704,7 +704,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.30708662]]></default>
+<default><![CDATA[0.1395133]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -882,7 +882,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[39]]></default>
+<default><![CDATA[18]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1298,7 +1298,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.79533356]]></default>
+<default><![CDATA[0.944294]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1476,7 +1476,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[101]]></default>
+<default><![CDATA[120]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1595,7 +1595,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.38394]]></default>
+<default><![CDATA[0.8996579]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1773,7 +1773,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[49]]></default>
+<default><![CDATA[114]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2486,7 +2486,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.74876547]]></default>
+<default><![CDATA[0.57318103]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2664,7 +2664,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[95]]></default>
+<default><![CDATA[73]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2783,7 +2783,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.5440091]]></default>
+<default><![CDATA[0.30133834]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2961,7 +2961,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[69]]></default>
+<default><![CDATA[38]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3674,7 +3674,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.496063]]></default>
+<default><![CDATA[0.7399293]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3852,7 +3852,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[63]]></default>
+<default><![CDATA[94]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3971,7 +3971,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.3829959]]></default>
+<default><![CDATA[0.4699122]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4149,7 +4149,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[49]]></default>
+<default><![CDATA[60]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4862,7 +4862,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.2519685]]></default>
+<default><![CDATA[0.5809022]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -5040,7 +5040,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[32]]></default>
+<default><![CDATA[74]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -5159,7 +5159,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.16535433]]></default>
+<default><![CDATA[0.8864163]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -5337,7 +5337,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[21]]></default>
+<default><![CDATA[113]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -17396,13 +17396,10 @@ function startRecord()
   print('startRecord');
   _recordEnabled = true;
   _recordArmed = false;
-  _playEnabled = false;
-  _frameIndex = 1;
-  _frames = {};
   
-  saveLastComponentsValue();
-  
+  saveLastComponentsValue();  
 end
+
 
 function stopRecord()
   print('stopRecord');
@@ -17472,7 +17469,7 @@ end
 
 
 function update()
-  if(_recordEnabled and (not _recordArmed)) then
+  if(_recordEnabled and (not _recordArmed) and (not _playEnabled)) then
     checkRecordArmed();
   end
   
@@ -17503,36 +17500,54 @@ function checkRecordArmed()
   table.insert(_frames, frame);
 end
 
+
 function record()
   -- save components value
   local frame = {};
   for i=1, #_components do
-    table.insert(frame, _components[i].values.x);
+    -- this condition allow to only save value if the component is touched
+    -- it's allow to not save unsignifiant values
+    -- and allow during play and overwrite record to keep the last overwrited value.
+    if(_components[i].values.touch) then
+      table.insert(frame, _components[i].values.x);
+    else
+      table.insert(frame, -1);
+    end
   end
   
   table.insert(_frames, frame);  
 end
 
+
 function play()
-  -- set components value
   local frame = _frames[_frameIndex];
   for i=1, #frame do
+    local currentValue = _components[i].values.x;
     local lastValue = _lastComponentsValue[i];
     local newValue = frame[i];
-    if(newValue ~= lastValue) then
+    
+    --if(_recordEnabled and currentValue ~= lastValue) then -- allow to record from midi received message (from physical controller)  
+    if(_recordEnabled and _components[i].values.touch) then -- allow to only record if the component is touched. Otherwise we can have jerk
+      -- overwrite value
+      frame[i] = currentValue;
+      _lastComponentsValue[i] = currentValue;    
+    elseif(newValue ~= -1 and newValue ~= lastValue) then
+      -- set component value
       _components[i].values.x = newValue;
       _lastComponentsValue[i] = newValue;
     end
   end
 
- -- loop  
+  -- change _frameIndex to loop  
   _frameIndex = _frameIndex + 1;
   if(_frameIndex > #_frames) then
     _frameIndex = 1;
   end  
   
+  -- update progress bar
   _progressBarComponent.frame.h = _progressBarHeight * (_frameIndex / #_frames);  
 end
+
 
 function saveLastComponentsValue()
   -- save all components value to check when armed the recording
@@ -17893,7 +17908,7 @@ end]]></value>
 <x>30</x>
 <y>2</y>
 <w>10</w>
-<h>64</h>
+<h>18.6053</h>
 </value>
 </property>
 <property type='b'>
@@ -52023,8 +52038,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[130
-]]></default>
+<default><![CDATA[117]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
