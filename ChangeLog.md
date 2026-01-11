@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.3] - 2026-01-11
+- Add record / play feature
+
 ## [0.2] - 2026-01-10
 - Replace DropE16.xml by the .tosc file
 - Add ChangeLog
