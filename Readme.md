@@ -38,6 +38,8 @@ This project is largely inspired by:
   - Control multiple MIDI parameters with a single control  
   - Easy assignment of radials to macros  
   - Invert control values
+- Record and play saved movements
+  - Record, move your component and loop on your record
 - Save / Load  
   - Session automatically saved on exit  
   - Ability to load configurations from logs
@@ -116,6 +118,15 @@ Examples:
 - Double-click a button to invert the control value
 
 <img width="1468" height="974" alt="Interface" src="/doc-assets/Macro.gif" />
+
+## Use Record
+
+- Press “record” to start recording
+- Modify your controllers
+- Press “record” or “play” to stop recording
+- Press “play” to play back what you have just recorded in a loop
+
+You can modify the other controllers during playback
 
 
 ## Set BPM
@@ -240,6 +251,15 @@ Manages:
   - `0` = disabled  
   - `1` = enabled  
   - `-1` = inverted  
+
+### Group record
+Handle all functions to record and play loopback
+
+### Record button
+Handle notify function to start record
+
+### Play button
+Handle notify function to start play
 
 ### BPM Button
 
