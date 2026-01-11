@@ -1001,7 +1001,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.8132601]]></default>
+<default><![CDATA[0.9258538]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1179,7 +1179,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[103]]></default>
+<default><![CDATA[118]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1595,7 +1595,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.8996579]]></default>
+<default><![CDATA[0.3215005]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1773,7 +1773,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[114]]></default>
+<default><![CDATA[41]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2189,7 +2189,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.54102457]]></default>
+<default><![CDATA[0.9258538]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2367,7 +2367,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[69]]></default>
+<default><![CDATA[118]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2486,7 +2486,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.57318103]]></default>
+<default><![CDATA[0.34473643]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2664,7 +2664,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[73]]></default>
+<default><![CDATA[44]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2783,7 +2783,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.30133834]]></default>
+<default><![CDATA[0.23136444]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2961,7 +2961,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[38]]></default>
+<default><![CDATA[29]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3377,7 +3377,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.54666317]]></default>
+<default><![CDATA[0.07414615]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3555,7 +3555,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[69]]></default>
+<default><![CDATA[9]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3674,7 +3674,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.7399293]]></default>
+<default><![CDATA[0.6680892]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3852,7 +3852,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[94]]></default>
+<default><![CDATA[85]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3971,7 +3971,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.4699122]]></default>
+<default><![CDATA[0.7473116]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4149,7 +4149,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[60]]></default>
+<default><![CDATA[95]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -17365,7 +17365,8 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[script]]></key>
-<value><![CDATA[local _playEnabled = false;
+<value><![CDATA[local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
+local _playEnabled = false;
 local _recordEnabled = false;      -- record is enabled, but we want wait a first controller change to start really the record
 local _recordArmed = false; -- record is enabled and a controller value has changed
 local _frameIndex = 1;
@@ -17378,7 +17379,7 @@ local _progressBarHeight = self.children.boxProgressBarHeight.frame.h;
 
 local _components = self.parent.children.groupRadial:findAllByType(ControlType.RADIAL);
 
-local _lastComponentsValue = {}; -- store last components value. Use to detect when armed recording. And use to don't touch component value is not changed
+local _lastComponentsValue = {}; -- store last components value. Used to detect when armed recording. And used to don't touch component value if not changed
 
 function onReceiveNotify(action, value)
   if(action == 'startRecord') then
@@ -17408,17 +17409,45 @@ function stopRecord()
   
   _stopButton.values.x = 0;
   
-  -- clean all last values of _frames. We want only keep frame that change
-  if(#_frames > 1) then  
+  
+  -- clean all last values of _frames. We want only keep frames that have change
+  if(#_frames > 1) then       
+  --[[
+    -- clean frames having only -1 values
+    for i = #_frames - 1, 1, -1 do
+      local currentFrame = _frames[i];
+      
+      print(i, table.concat(currentFrame, ", "));
+      local allValueUnset = true;
+      for j=1, #currentFrame do
+        if(currentFrame[j] ~= -1) then
+          allValueUnset = false;
+          break;
+        end
+      end
+
+      
+      if(allValueUnset) then             
+        table.remove(_frames, i + 1);
+        print('remove', i+1);
+      else
+        break;
+      end
+    end
+  ]]
+  
+
     local lastValues = {};
     local lastFrame = _frames[#_frames];
     for i=1, #lastFrame do
       table.insert(lastValues, lastFrame[i]);
     end
-
+    --print('lastFrame', table.concat(lastFrame, ", "));
 
     for i = #_frames - 1, 1, -1 do
       local currentFrame = _frames[i];
+      --print(i, table.concat(currentFrame, ", "));
+      
       local currentValues = {};
       for j=1, #currentFrame do
         table.insert(currentValues, currentFrame[j]);
@@ -17436,6 +17465,7 @@ function stopRecord()
       
       if(isSame) then             
         table.remove(_frames, i + 1);
+        --print('remove', i+1);
       else
         break;
       end
@@ -17503,34 +17533,52 @@ end
 
 function record()
   -- save components value
+  local now = getMillis();
+  
   local frame = {};
   for i=1, #_components do
-    -- this condition allow to only save value if the component is touched
-    -- it's allow to not save unsignifiant values
-    -- and allow during play and overwrite record to keep the last overwrited value.
-    if(_components[i].values.touch) then
+    local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;  
+    local doRecord = valueHasChanged;
+    
+    if(doRecord) then
       table.insert(frame, _components[i].values.x);
+      _lastComponentsValue[i] = _components[i].values.x;
     else
       table.insert(frame, -1);
     end
   end
   
   table.insert(_frames, frame);  
+  
+  if(#_frames > _maxNbFrames) then
+    stopRecord();
+  end
 end
 
 
 function play()
+  local now = getMillis();
   local frame = _frames[_frameIndex];
   for i=1, #frame do
     local currentValue = _components[i].values.x;
     local lastValue = _lastComponentsValue[i];
     local newValue = frame[i];
     
-    --if(_recordEnabled and currentValue ~= lastValue) then -- allow to record from midi received message (from physical controller)  
-    if(_recordEnabled and _components[i].values.touch) then -- allow to only record if the component is touched. Otherwise we can have jerk
+    local doRecord = _recordEnabled;
+    if(doRecord) then  
+      local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;
+      doRecord = valueHasChanged;      
+      
+      if(i==12) then
+        print(doRecord)
+      end
+    end
+  
+    
+    if(doRecord) then 
       -- overwrite value
       frame[i] = currentValue;
-      _lastComponentsValue[i] = currentValue;    
+      _lastComponentsValue[i] = currentValue; 
     elseif(newValue ~= -1 and newValue ~= lastValue) then
       -- set component value
       _components[i].values.x = newValue;
@@ -17551,8 +17599,9 @@ end
 
 function saveLastComponentsValue()
   -- save all components value to check when armed the recording
+  local now = getMillis();
   _lastComponentsValue = {};
-    for i=1, #_components do
+  for i=1, #_components do
     table.insert(_lastComponentsValue, _components[i].values.x);
   end
 end]]></value>
@@ -17908,7 +17957,7 @@ end]]></value>
 <x>30</x>
 <y>2</y>
 <w>10</w>
-<h>18.6053</h>
+<h>12.6124</h>
 </value>
 </property>
 <property type='b'>
