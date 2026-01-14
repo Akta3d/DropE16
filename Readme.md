@@ -4,7 +4,7 @@ DropE16 is a [TouchOSC](https://hexler.net/touchosc) MIDI Controller.
 <img width="1469" height="969" alt="DropE16" src="/doc-assets/DropE16.png" />
 
 ## Demo
-<img width="1468" height="974" alt="Interface" src="/doc-assets/Demo.gif" />
+<img width="1468" height="974" alt="Interface" src="/doc-assets/Demo2.gif" />
 
 
 ## Interface
@@ -126,8 +126,10 @@ Examples:
 - Press “record” or “play” to stop recording
 - Press “play” to play back what you have just recorded in a loop
 
-You can modify the other controllers during playback
+You can modify the other controllers during playback.
+When playing back a recording in a loop, it is possible to return to recording mode and add movements to this loop.
 
+<img width="2190" height="1165" alt="DropE16" src="/doc-assets/RecordPlay.gif" />
 
 ## Set BPM
 
@@ -279,3 +281,11 @@ Call the `save` function in `groupSettings`
 
 Restores component values from a previously saved log.
 The button contains the logs to reload then call the `load` function in `groupSettings`
+
+# Known issues
+
+**Load / Save from Log**  
+The MIDI configuration (channel and controller) cannot be saved. We recommend saving different versions of this layout if you want to have different configurations. Or add pages for all your configurations.
+
+**Record / Play**  
+When looping a recording and in recording mode, if you modify a controller that already had movement, it is possible to experience value jumps. ToushOSC attempts to update the controller while you are manipulating it, which causes jumps depending on the performance of your device.
