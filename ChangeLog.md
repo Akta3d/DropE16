@@ -1,12 +1,16 @@
 # Changelog
 
+## [0.3] - 2026-01-11
+- Add record / play feature
+- Add blink on BPM Led
+
 ## [0.2] - 2026-01-10
-- Replace DropE16.xml by the .tosc file
+- Add DropE16.tosc file
 - Add ChangeLog
 - Improve Save / Load from logs
   - During load, log if component not found
   - Save more components
-    - Page name and color
+    - Pages name and color
     - Save and load Radials configuration
       - Radials: color
       - Labels: Text and color
