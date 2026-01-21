@@ -339,11 +339,11 @@ end]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[outline]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>0</value>
+<value>1</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -17365,9 +17365,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[script]]></key>
-<value><![CDATA[local _ABRUPT_CHANGE_FILTER_ENABELD = false;
-
-local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
+<value><![CDATA[local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
 local _playEnabled = false;
 local _recordEnabled = false;      -- record is enabled, but we want wait a first controller change to start really the record
 local _recordArmed = false; -- record is enabled and a controller value has changed
@@ -17382,10 +17380,6 @@ local _progressBarHeight = self.children.boxProgressBarHeight.frame.h;
 local _components = self.parent.children.groupRadial:findAllByType(ControlType.RADIAL);
 
 local _lastComponentsValue = {}; -- store last components value. Used to detect when armed recording. And used to don't touch component value if not changed
-
-local _abruptFilterMaxLength = 8;
-local _abruptLastComponentsValue = {}; -- used if _ABRUPT_CHANGE_FILTER_ENABELD. Store on all components last _abruptFilterMaxLength values (different of -1)
-local _abruptThreshold = 0.4;  -- threshold to consider new Value as a non abrupt value
 
 function onReceiveNotify(action, value)
   if(action == 'startRecord') then
@@ -17533,12 +17527,10 @@ function play()
     --check if record is activate to overwrite values
     local doRecord = _recordEnabled;
     if(doRecord) then  
-      local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;
-      doRecord = valueHasChanged;      
-      if(doRecord) then
-       doRecord = doAbruptChangeFilter(i, newValue);
-       insertInAbruptFilter(i, newValue);
-      end
+      doRecord = lastValue ~= currentValue;
+      if(_components[i].values.touch) then 
+        doRecord = newValue ~= currentValue;
+      end          
     end
   
     
@@ -17550,7 +17542,6 @@ function play()
       -- set component value
       _components[i].values.x = newValue;
       _lastComponentsValue[i] = newValue;
-      insertInAbruptFilter(i, newValue);
     end    
   end
 
@@ -17572,69 +17563,6 @@ function saveLastComponentsValue()
   for i=1, #_components do
     table.insert(_lastComponentsValue, _components[i].values.x);
   end
-end
-
-
-function doAbruptChangeFilter(componentIndex, newValue)
-  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
-    return true;
-  end
-  
-  local averageValue = average(_abruptLastComponentsValue[componentIndex]);
-  if(not averageValue) then
-    -- averabe can't be compouted _abruptLastComponentsValue is nil or empty => allow newValue
-    return true;
-  end
-  
-  local allowValue = math.abs(averageValue - newValue) < _abruptThreshold;
-  
-  if(componentIndex == 12) then
-    -- print(allowValue, newValue, 'componentIndex', componentIndex, '#_abruptLastComponentsValue', #_abruptLastComponentsValue[componentIndex], 'averageValue', averageValue, 'values', table.concat(_abruptLastComponentsValue[componentIndex], ', '));
-  end
-  return allowValue;
-end
-
-
-
-function insertInAbruptFilter(componentIndex, newValue)
-  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
-    return;
-  end
-  
-  if(newValue == -1) then
-    return;
-  end
-  
-  if(not _abruptLastComponentsValue[componentIndex]) then
-    _abruptLastComponentsValue[componentIndex] = {};
-  end
-  
-  table.insert(_abruptLastComponentsValue[componentIndex], newValue);
-  if(#_abruptLastComponentsValue[componentIndex] > _abruptFilterMaxLength) then
-    table.remove(_abruptLastComponentsValue[componentIndex], 1);
-  end
-end
-
-
-function average(t)
-  local result = nil; -- or 0
-  if(not t) then
-    return result;
-  end
-  
-  local sum = 0;
-  local count = 0;
-
-  for _, v in ipairs(t) do
-      sum = sum + v;
-      count = count + 1;
-  end
-
-  if count == 0 then
-      return result;
-  end
-
-  return sum / count;
 end]]></value>
 </property>
 <property type='i'>
@@ -34988,9 +34916,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[script]]></key>
-<value><![CDATA[local _ABRUPT_CHANGE_FILTER_ENABELD = false;
-
-local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
+<value><![CDATA[local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
 local _playEnabled = false;
 local _recordEnabled = false;      -- record is enabled, but we want wait a first controller change to start really the record
 local _recordArmed = false; -- record is enabled and a controller value has changed
@@ -35005,10 +34931,6 @@ local _progressBarHeight = self.children.boxProgressBarHeight.frame.h;
 local _components = self.parent.children.groupRadial:findAllByType(ControlType.RADIAL);
 
 local _lastComponentsValue = {}; -- store last components value. Used to detect when armed recording. And used to don't touch component value if not changed
-
-local _abruptFilterMaxLength = 8;
-local _abruptLastComponentsValue = {}; -- used if _ABRUPT_CHANGE_FILTER_ENABELD. Store on all components last _abruptFilterMaxLength values (different of -1)
-local _abruptThreshold = 0.4;  -- threshold to consider new Value as a non abrupt value
 
 function onReceiveNotify(action, value)
   if(action == 'startRecord') then
@@ -35156,12 +35078,10 @@ function play()
     --check if record is activate to overwrite values
     local doRecord = _recordEnabled;
     if(doRecord) then  
-      local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;
-      doRecord = valueHasChanged;      
-      if(doRecord) then
-       doRecord = doAbruptChangeFilter(i, newValue);
-       insertInAbruptFilter(i, newValue);
-      end
+      doRecord = lastValue ~= currentValue;
+      if(_components[i].values.touch) then 
+        doRecord = newValue ~= currentValue;
+      end          
     end
   
     
@@ -35173,7 +35093,6 @@ function play()
       -- set component value
       _components[i].values.x = newValue;
       _lastComponentsValue[i] = newValue;
-      insertInAbruptFilter(i, newValue);
     end    
   end
 
@@ -35195,69 +35114,6 @@ function saveLastComponentsValue()
   for i=1, #_components do
     table.insert(_lastComponentsValue, _components[i].values.x);
   end
-end
-
-
-function doAbruptChangeFilter(componentIndex, newValue)
-  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
-    return true;
-  end
-  
-  local averageValue = average(_abruptLastComponentsValue[componentIndex]);
-  if(not averageValue) then
-    -- averabe can't be compouted _abruptLastComponentsValue is nil or empty => allow newValue
-    return true;
-  end
-  
-  local allowValue = math.abs(averageValue - newValue) < _abruptThreshold;
-  
-  if(componentIndex == 12) then
-    -- print(allowValue, newValue, 'componentIndex', componentIndex, '#_abruptLastComponentsValue', #_abruptLastComponentsValue[componentIndex], 'averageValue', averageValue, 'values', table.concat(_abruptLastComponentsValue[componentIndex], ', '));
-  end
-  return allowValue;
-end
-
-
-
-function insertInAbruptFilter(componentIndex, newValue)
-  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
-    return;
-  end
-  
-  if(newValue == -1) then
-    return;
-  end
-  
-  if(not _abruptLastComponentsValue[componentIndex]) then
-    _abruptLastComponentsValue[componentIndex] = {};
-  end
-  
-  table.insert(_abruptLastComponentsValue[componentIndex], newValue);
-  if(#_abruptLastComponentsValue[componentIndex] > _abruptFilterMaxLength) then
-    table.remove(_abruptLastComponentsValue[componentIndex], 1);
-  end
-end
-
-
-function average(t)
-  local result = nil; -- or 0
-  if(not t) then
-    return result;
-  end
-  
-  local sum = 0;
-  local count = 0;
-
-  for _, v in ipairs(t) do
-      sum = sum + v;
-      count = count + 1;
-  end
-
-  if count == 0 then
-      return result;
-  end
-
-  return sum / count;
 end]]></value>
 </property>
 <property type='i'>
@@ -38053,7 +37909,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.6062992]]></default>
+<default><![CDATA[0.8310501]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -38231,7 +38087,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[77]]></default>
+<default><![CDATA[106]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -39241,7 +39097,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[1]]></default>
+<default><![CDATA[0.78619915]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -39419,7 +39275,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[127]]></default>
+<default><![CDATA[100]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -52611,9 +52467,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[script]]></key>
-<value><![CDATA[local _ABRUPT_CHANGE_FILTER_ENABELD = false;
-
-local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
+<value><![CDATA[local _maxNbFrames = 1000; -- to limit record duration (to limit memory)
 local _playEnabled = false;
 local _recordEnabled = false;      -- record is enabled, but we want wait a first controller change to start really the record
 local _recordArmed = false; -- record is enabled and a controller value has changed
@@ -52628,10 +52482,6 @@ local _progressBarHeight = self.children.boxProgressBarHeight.frame.h;
 local _components = self.parent.children.groupRadial:findAllByType(ControlType.RADIAL);
 
 local _lastComponentsValue = {}; -- store last components value. Used to detect when armed recording. And used to don't touch component value if not changed
-
-local _abruptFilterMaxLength = 8;
-local _abruptLastComponentsValue = {}; -- used if _ABRUPT_CHANGE_FILTER_ENABELD. Store on all components last _abruptFilterMaxLength values (different of -1)
-local _abruptThreshold = 0.4;  -- threshold to consider new Value as a non abrupt value
 
 function onReceiveNotify(action, value)
   if(action == 'startRecord') then
@@ -52779,12 +52629,10 @@ function play()
     --check if record is activate to overwrite values
     local doRecord = _recordEnabled;
     if(doRecord) then  
-      local valueHasChanged = _lastComponentsValue[i] ~= _components[i].values.x;
-      doRecord = valueHasChanged;      
-      if(doRecord) then
-       doRecord = doAbruptChangeFilter(i, newValue);
-       insertInAbruptFilter(i, newValue);
-      end
+      doRecord = lastValue ~= currentValue;
+      if(_components[i].values.touch) then 
+        doRecord = newValue ~= currentValue;
+      end          
     end
   
     
@@ -52796,7 +52644,6 @@ function play()
       -- set component value
       _components[i].values.x = newValue;
       _lastComponentsValue[i] = newValue;
-      insertInAbruptFilter(i, newValue);
     end    
   end
 
@@ -52818,69 +52665,6 @@ function saveLastComponentsValue()
   for i=1, #_components do
     table.insert(_lastComponentsValue, _components[i].values.x);
   end
-end
-
-
-function doAbruptChangeFilter(componentIndex, newValue)
-  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
-    return true;
-  end
-  
-  local averageValue = average(_abruptLastComponentsValue[componentIndex]);
-  if(not averageValue) then
-    -- averabe can't be compouted _abruptLastComponentsValue is nil or empty => allow newValue
-    return true;
-  end
-  
-  local allowValue = math.abs(averageValue - newValue) < _abruptThreshold;
-  
-  if(componentIndex == 12) then
-    -- print(allowValue, newValue, 'componentIndex', componentIndex, '#_abruptLastComponentsValue', #_abruptLastComponentsValue[componentIndex], 'averageValue', averageValue, 'values', table.concat(_abruptLastComponentsValue[componentIndex], ', '));
-  end
-  return allowValue;
-end
-
-
-
-function insertInAbruptFilter(componentIndex, newValue)
-  if(not _ABRUPT_CHANGE_FILTER_ENABELD) then
-    return;
-  end
-  
-  if(newValue == -1) then
-    return;
-  end
-  
-  if(not _abruptLastComponentsValue[componentIndex]) then
-    _abruptLastComponentsValue[componentIndex] = {};
-  end
-  
-  table.insert(_abruptLastComponentsValue[componentIndex], newValue);
-  if(#_abruptLastComponentsValue[componentIndex] > _abruptFilterMaxLength) then
-    table.remove(_abruptLastComponentsValue[componentIndex], 1);
-  end
-end
-
-
-function average(t)
-  local result = nil; -- or 0
-  if(not t) then
-    return result;
-  end
-  
-  local sum = 0;
-  local count = 0;
-
-  for _, v in ipairs(t) do
-      sum = sum + v;
-      count = count + 1;
-  end
-
-  if count == 0 then
-      return result;
-  end
-
-  return sum / count;
 end]]></value>
 </property>
 <property type='i'>
@@ -53234,7 +53018,7 @@ end]]></value>
 <x>30</x>
 <y>2</y>
 <w>10</w>
-<h>0</h>
+<h>82.9922</h>
 </value>
 </property>
 <property type='b'>

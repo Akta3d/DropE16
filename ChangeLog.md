@@ -3,6 +3,7 @@
 ## [0.4] - 2026-01-21
 - Save selected page color
 - Add a section to the readme: How to update the layout without losing MIDI mapping
+- Avoid value jumps during overwriting a loopback
 
 ## [0.3] - 2026-01-11
 - Add record / play feature
