@@ -216,6 +216,14 @@ This process saves, for each page:
 
 ---
 
+# How to update the TouchOSC layout without losing my MIDI mapping
+From your current layout version, copy the group groupRadial of each page.  
+Then, on the new layout version, delete and paste all these groups.
+
+There is no script in these components.
+
+---
+
 # Developer Notes
 
 This section highlights where scripting is used.  
