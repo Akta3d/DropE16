@@ -3,6 +3,27 @@ DropE16 is a [TouchOSC](https://hexler.net/touchosc) MIDI Controller.
 
 <img width="1469" height="969" alt="DropE16" src="/doc-assets/DropE16.png" />
 
+## Table of Contents
+
+- [Demo](#demo)
+- [Interface](#interface)
+- [Motivation](#motivation)
+- [Features](#features)
+- [License](#license)
+- [How to Use](#how-to-use)
+  - [Change MIDI CC](#change-midi-cc)
+  - [Use Radials](#use-radials)
+  - [Use Snapshots](#use-snapshots)
+  - [Use Macros](#use-macros)
+  - [Use Record](#use-record)
+  - [Set BPM](#set-bpm)
+  - [Save / Load](#save--load)
+  - [Save Multiple Configurations Using "Logs"](#save-multiple-configurations-using-logs)
+- [How to Customize](#how-to-customize)
+- [How to update the TouchOSC layout](#how-to-update-the-touchosc-layout)
+- [Developer Notes](#developer-notes)
+- [Known issues](#known-issues)
+
 ## Demo
 <img width="1468" height="974" alt="Interface" src="/doc-assets/Demo2.gif" />
 
