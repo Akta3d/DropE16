@@ -476,9 +476,9 @@ end]]></value>
 <key><![CDATA[tabColorOn]]></key>
 <value>
 <r>0</r>
-<g>0</g>
-<b>0</b>
-<a>0</a>
+<g>0.888889</g>
+<b>0.529032</b>
+<a>1</a>
 </value>
 </property>
 <property type='s'>
@@ -18123,9 +18123,9 @@ end]]></value>
 <key><![CDATA[tabColorOn]]></key>
 <value>
 <r>0</r>
-<g>0</g>
-<b>0</b>
-<a>0</a>
+<g>0.890196</g>
+<b>0.529412</b>
+<a>1</a>
 </value>
 </property>
 <property type='s'>
@@ -35746,9 +35746,9 @@ end]]></value>
 <key><![CDATA[tabColorOn]]></key>
 <value>
 <r>0</r>
-<g>0</g>
-<b>0</b>
-<a>0</a>
+<g>0.890196</g>
+<b>0.529412</b>
+<a>1</a>
 </value>
 </property>
 <property type='s'>
@@ -53892,7 +53892,7 @@ function savePage(pageID)
 
   local page = root:findByID(pageID, true);
   --logProperties(page);
-  message = message .. 'PAGE: ' .. separator .. page.ID .. separator .. page.tabLabel .. separator .. saveColor(page.tabColorOff) .. endl;
+  message = message .. 'PAGE: ' .. separator .. page.ID .. separator .. page.tabLabel .. separator .. saveColor(page.tabColorOff) .. separator .. saveColor(page.tabColorOn) .. endl;
   
   local groupSnapshotButton = page:findByName('groupSnapshotButton', true);
   message = message .. saveSnapshotButtons(groupSnapshotButton.ID);
@@ -54044,13 +54044,15 @@ function loadPage(savedMessage)
   
   local id = values[2];
   local label = values[3];
-  local color = values[4];
+  local colorOff = values[4];
+  local colorOn = values[5];
   
   
   local page = root:findByID(id, true);
   if(page ~= nil) then
     page.tabLabel = label;
-    page.tabColorOff = loadColor(color);
+    page.tabColorOff = loadColor(colorOff);
+    page.tabColorOn = loadColor(colorOn);
   else
     print('Page not found: ', savedMessage);
   end  
