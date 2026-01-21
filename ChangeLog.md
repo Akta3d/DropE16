@@ -4,6 +4,7 @@
 - Save selected page color
 - Add a section to the readme: How to update the layout without losing MIDI mapping
 - Avoid value jumps during overwriting a loopback
+- Possibility to play with other component during play a loopback record
 
 ## [0.3] - 2026-01-11
 - Add record / play feature

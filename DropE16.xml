@@ -263,6 +263,10 @@ function doMorphing()
   local nbComponents = #_components;
   for i=1, nbComponents do
     local component = _components[i];
+    if(component.values.x == _morphingTargetValues[i]) then 
+      break;
+    end
+    
     local v0 = _morphingStartValues[i] or component.values.x;
     local v1 = _morphingTargetValues[i] or v0;
     local v = v0 + (v1 - v0) * t;
@@ -1001,7 +1005,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[1]]></default>
+<default><![CDATA[0.9716309]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1179,7 +1183,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[127]]></default>
+<default><![CDATA[123]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1298,7 +1302,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.51968503]]></default>
+<default><![CDATA[0.6725886]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1476,7 +1480,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[66]]></default>
+<default><![CDATA[85]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1595,7 +1599,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.54330707]]></default>
+<default><![CDATA[0.45512944]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1773,7 +1777,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[69]]></default>
+<default><![CDATA[58]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1892,7 +1896,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.24409449]]></default>
+<default><![CDATA[0.29412484]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2070,7 +2074,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[31]]></default>
+<default><![CDATA[37]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2486,7 +2490,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.54330707]]></default>
+<default><![CDATA[0.40855354]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2664,7 +2668,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[69]]></default>
+<default><![CDATA[52]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2783,7 +2787,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.6062992]]></default>
+<default><![CDATA[0.48573026]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2961,7 +2965,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[77]]></default>
+<default><![CDATA[62]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3080,7 +3084,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.496063]]></default>
+<default><![CDATA[0.96141165]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3258,7 +3262,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[63]]></default>
+<default><![CDATA[122]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3377,7 +3381,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.8425197]]></default>
+<default><![CDATA[0.47372055]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3555,7 +3559,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[107]]></default>
+<default><![CDATA[60]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3674,7 +3678,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.496063]]></default>
+<default><![CDATA[0.5987658]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3852,7 +3856,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[63]]></default>
+<default><![CDATA[76]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4565,7 +4569,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.5905512]]></default>
+<default><![CDATA[0.56866294]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4743,7 +4747,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[75]]></default>
+<default><![CDATA[72]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4862,7 +4866,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.2519685]]></default>
+<default><![CDATA[0.25587714]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -5159,7 +5163,7 @@ end]]></value>
 <key><![CDATA[x]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0.16535433]]></default>
+<default><![CDATA[0.16222742]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -9529,7 +9533,7 @@ end]]></value>
 <value>
 <x>64</x>
 <y>254</y>
-<w>180.598</w>
+<w>180</w>
 <h>10</h>
 </value>
 </property>
@@ -9676,8 +9680,8 @@ end]]></value>
 <property type='c'>
 <key><![CDATA[color]]></key>
 <value>
-<r>0</r>
-<g>1</g>
+<r>1</r>
+<g>0</g>
 <b>0</b>
 <a>1</a>
 </value>
@@ -9823,8 +9827,8 @@ end]]></value>
 <property type='c'>
 <key><![CDATA[color]]></key>
 <value>
-<r>1</r>
-<g>0</g>
+<r>0</r>
+<g>1</g>
 <b>0</b>
 <a>1</a>
 </value>
@@ -17539,6 +17543,9 @@ function play()
       frame[i] = currentValue;
       _lastComponentsValue[i] = currentValue; 
     elseif(newValue ~= -1 and newValue ~= lastValue) then
+      if(_components[i].values.touch) then 
+        break;
+      end     
       -- set component value
       _components[i].values.x = newValue;
       _lastComponentsValue[i] = newValue;
@@ -17916,7 +17923,7 @@ end]]></value>
 <x>30</x>
 <y>2</y>
 <w>10</w>
-<h>0</h>
+<h>40.3084</h>
 </value>
 </property>
 <property type='b'>
@@ -35090,6 +35097,9 @@ function play()
       frame[i] = currentValue;
       _lastComponentsValue[i] = currentValue; 
     elseif(newValue ~= -1 and newValue ~= lastValue) then
+      if(_components[i].values.touch) then 
+        break;
+      end     
       -- set component value
       _components[i].values.x = newValue;
       _lastComponentsValue[i] = newValue;
@@ -52641,6 +52651,9 @@ function play()
       frame[i] = currentValue;
       _lastComponentsValue[i] = currentValue; 
     elseif(newValue ~= -1 and newValue ~= lastValue) then
+      if(_components[i].values.touch) then 
+        break;
+      end     
       -- set component value
       _components[i].values.x = newValue;
       _lastComponentsValue[i] = newValue;
