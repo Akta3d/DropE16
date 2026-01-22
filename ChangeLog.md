@@ -5,6 +5,7 @@
 - Add a section to the readme: How to update the layout without losing MIDI mapping
 - Avoid value jumps during overwriting a loopback
 - Possibility to play with other component during play a loopback record
+- Possibility to set the macro radial to 0, half, or full without changing radials values
 
 ## [0.3] - 2026-01-11
 - Add record / play feature

@@ -134,9 +134,13 @@ Examples:
 ## Use Macros
 
 - Press the **Set** button of the desired macro  
-  → Small buttons appear next to each radial
-- Single-click a button to assign the radial to the macro
-- Double-click a button to invert the control value
+  → Small buttons appear next to each radials
+- Single-click a button to assign the radials to the macro
+- Double-click a button to invert the radials value
+
+When you move a macro, the values of the radials are modified relatively. For example, if the macro changes by 0.1, all connected radials will be modified by 0.1. This is not an absolute value.
+
+You can change the position of the macro to 0, half, or full by clicking on the small round buttons below the macros.
 
 <img width="1468" height="974" alt="Interface" src="/doc-assets/Macro.gif" />
 
