@@ -886,7 +886,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[39]]></default>
+<default><![CDATA[15]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1183,7 +1183,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[123]]></default>
+<default><![CDATA[127]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1480,7 +1480,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[85]]></default>
+<default><![CDATA[110]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -1777,7 +1777,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[58]]></default>
+<default><![CDATA[63]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2074,7 +2074,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[37]]></default>
+<default><![CDATA[46]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2668,7 +2668,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[52]]></default>
+<default><![CDATA[47]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -2965,7 +2965,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[62]]></default>
+<default><![CDATA[63]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3262,7 +3262,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[122]]></default>
+<default><![CDATA[63]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3559,7 +3559,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[60]]></default>
+<default><![CDATA[113]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -3856,7 +3856,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[76]]></default>
+<default><![CDATA[79]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4153,7 +4153,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[64]]></default>
+<default><![CDATA[83]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4450,7 +4450,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[32]]></default>
+<default><![CDATA[31]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -4747,7 +4747,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[72]]></default>
+<default><![CDATA[86]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -5044,7 +5044,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[32]]></default>
+<default><![CDATA[21]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -5341,7 +5341,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[21]]></default>
+<default><![CDATA[6]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -9786,7 +9786,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[0.30708661675453|1|0.51968502998352|0.54330706596375|0.24409449100494|1|0.54330706596375|0.60629922151566|0.4960629940033|0.84251970052719|0.4960629940033|0.5039370059967|0.25196850299835|0.59055119752884|0.25196850299835|0.16535432636738|]]></value>
+<value><![CDATA[0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.29133859276772|0.4960629940033|0.44881889224052|0.70866143703461|0.16535432636738|0.047244094312191|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -9933,7 +9933,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[0.30708661675453|1|0.48818898200989|0.44094488024712|0.74803149700165|1|0.54330706596375|0.60629922151566|0.96850395202637|0.84251970052719|0.37007874250412|0.5039370059967|0.25196850299835|0.59055119752884|0.29133859276772|0.11364471167326|]]></value>
+<value><![CDATA[0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.24409449100494|0.4960629940033|0.24409449100494|0.32283464074135|0.16535432636738|0.047244094312191|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -10080,7 +10080,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[0.30708661675453|1|0.48818898200989|0.44094488024712|0.74803149700165|1|0.54330706596375|0.60629922151566|0.96850395202637|0.84251970052719|0.17322835326195|0.5039370059967|0.25196850299835|0.37007874250412|0.29133859276772|0.13385826349258|]]></value>
+<value><![CDATA[0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.46456691622734|0.4960629940033|0.24409449100494|0.32283464074135|0.16535432636738|0.047244094312191|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -10166,7 +10166,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -10224,6 +10224,10 @@ end]]></value>
 <property type='i'>
 <key><![CDATA[shape]]></key>
 <value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[tag]]></key>
+<value><![CDATA[0.11811023950577|1|0.86614173650742|0.4960629940033|0.36220473051071|1|0.37007874250412|0.4960629940033|0.4960629940033|0.88976377248764|0.62204724550247|0.6535432934761|0.24409449100494|0.67716532945633|0.16535432636738|0.047244094312191|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -10370,7 +10374,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[0.71653544902802|0.89763778448105|0.53543305397034|0.48031497001648|0.59842520952225|1|0.46456691622734|0.48818898200989|0.88188976049423|1|0.56692916154861|0.4960629940033|0.25196850299835|0.19685038924217|0.25196850299835|0.16535432636738|]]></value>
+<value><![CDATA[0.13951329886913|0.81047344207764|0.26578149199486|0.47710937261581|0.24409449100494|0.81047344207764|0.74963879585266|0.35518264770508|0.4960629940033|0.41042900085449|0.1265409886837|0.62206321954727|0.25196850299835|0.58267718553543|0.27889236807823|0.043204955756664|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -10456,7 +10460,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -10514,6 +10518,10 @@ end]]></value>
 <property type='i'>
 <key><![CDATA[shape]]></key>
 <value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[tag]]></key>
+<value><![CDATA[0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.17322835326195|0.4960629940033|0.44881889224052|0.56692916154861|0.16535432636738|0.047244094312191|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -18761,7 +18769,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[127]]></default>
+<default><![CDATA[55]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -19058,7 +19066,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[111]]></default>
+<default><![CDATA[79]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -19355,7 +19363,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[115]]></default>
+<default><![CDATA[63]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -19949,7 +19957,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[127]]></default>
+<default><![CDATA[55]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -20246,7 +20254,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[69]]></default>
+<default><![CDATA[79]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -20543,7 +20551,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[77]]></default>
+<default><![CDATA[52]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -21137,7 +21145,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0]]></default>
+<default><![CDATA[55]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -21434,7 +21442,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[59]]></default>
+<default><![CDATA[29]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -21731,7 +21739,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[127]]></default>
+<default><![CDATA[60]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -22325,7 +22333,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[75]]></default>
+<default><![CDATA[87]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -22622,7 +22630,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[101]]></default>
+<default><![CDATA[32]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -22919,7 +22927,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[90]]></default>
+<default><![CDATA[18]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -27303,7 +27311,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -27361,6 +27369,10 @@ end]]></value>
 <property type='i'>
 <key><![CDATA[shape]]></key>
 <value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[tag]]></key>
+<value><![CDATA[0.30708661675453|0.0051890816539526|0.17336820065975|0.49600198864937|0.24409449100494|0.0051890816539526|0.13074786961079|0.40714263916016|0.4960629940033|0.0051890816539526|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -27446,7 +27458,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -27504,6 +27516,10 @@ end]]></value>
 <property type='i'>
 <key><![CDATA[shape]]></key>
 <value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[tag]]></key>
+<value><![CDATA[0.30708661675453|0.74936616420746|0.43742015957832|0.49600198864937|0.24409449100494|0.74936616420746|0.39479979872704|0.40714263916016|0.4960629940033|0.74936616420746|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -27589,7 +27605,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -27647,6 +27663,10 @@ end]]></value>
 <property type='i'>
 <key><![CDATA[shape]]></key>
 <value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[tag]]></key>
+<value><![CDATA[0.30708661675453|0.74936616420746|0.5365434885025|0.49600198864937|0.24409449100494|0.74936616420746|0.49392309784889|0.40714263916016|0.4960629940033|0.74936616420746|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -27732,7 +27752,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -27790,6 +27810,10 @@ end]]></value>
 <property type='i'>
 <key><![CDATA[shape]]></key>
 <value>1</value>
+</property>
+<property type='s'>
+<key><![CDATA[tag]]></key>
+<value><![CDATA[0.30708661675453|1|0.71155273914337|0.49600198864937|0.24409449100494|0.96585613489151|0.66893231868744|0.40714263916016|0.4960629940033|1|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -30505,7 +30529,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -30587,7 +30611,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[-1]]></value>
+<value><![CDATA[1]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -30923,7 +30947,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[1]]></value>
+<value><![CDATA[0]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -31427,7 +31451,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[1]]></value>
+<value><![CDATA[0]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -31595,7 +31619,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[1]]></value>
+<value><![CDATA[0]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -33235,7 +33259,7 @@ end]]></value>
 </property>
 <property type='i'>
 <key><![CDATA[outlineStyle]]></key>
-<value>1</value>
+<value>0</value>
 </property>
 <property type='i'>
 <key><![CDATA[pointerPriority]]></key>
@@ -33317,7 +33341,7 @@ end]]></value>
 </property>
 <property type='s'>
 <key><![CDATA[tag]]></key>
-<value><![CDATA[-1]]></value>
+<value><![CDATA[1]]></value>
 </property>
 <property type='b'>
 <key><![CDATA[valuePosition]]></key>
@@ -36018,7 +36042,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[39]]></default>
+<default><![CDATA[43]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -36315,7 +36339,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[127]]></default>
+<default><![CDATA[123]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -36612,7 +36636,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[111]]></default>
+<default><![CDATA[100]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -36909,7 +36933,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[115]]></default>
+<default><![CDATA[61]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -37206,7 +37230,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[31]]></default>
+<default><![CDATA[19]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -37800,7 +37824,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[69]]></default>
+<default><![CDATA[37]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -38097,7 +38121,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[106]]></default>
+<default><![CDATA[69]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -38394,7 +38418,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[63]]></default>
+<default><![CDATA[7]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -38691,7 +38715,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[0]]></default>
+<default><![CDATA[93]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -38988,7 +39012,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[59]]></default>
+<default><![CDATA[76]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -39285,7 +39309,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[100]]></default>
+<default><![CDATA[60]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -39582,7 +39606,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[32]]></default>
+<default><![CDATA[34]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -39879,7 +39903,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[75]]></default>
+<default><![CDATA[83]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -40176,7 +40200,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[101]]></default>
+<default><![CDATA[39]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -40473,7 +40497,7 @@ end]]></value>
 <key><![CDATA[text]]></key>
 <locked>0</locked>
 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-<default><![CDATA[90]]></default>
+<default><![CDATA[7]]></default>
 <defaultPull>0</defaultPull>
 </value>
 <value>
@@ -53423,8 +53447,8 @@ end]]></value>
 <key><![CDATA[color]]></key>
 <value>
 <r>1</r>
-<g>0.77</g>
-<b>0.65</b>
+<g>0.48</g>
+<b>0.28</b>
 <a>1</a>
 </value>
 </property>
@@ -53839,17 +53863,21 @@ function loadPage(savedMessage)
     table.insert(values, v)
   end
   
+  
   local id = values[2];
-  local label = values[3];
-  local colorOff = values[4];
-  local colorOn = values[5];
-  
-  
   local page = root:findByID(id, true);
-  if(page ~= nil) then
+  if(page ~= nil) then  
+    local label = values[3];
     page.tabLabel = label;
+    
+    local colorOff = values[4];
     page.tabColorOff = loadColor(colorOff);
-    page.tabColorOn = loadColor(colorOn);
+    
+    -- added on version v.0.4
+    if(#values >= 5) then
+      local colorOn = values[5];
+      page.tabColorOn = loadColor(colorOn);
+    end  
   else
     print('Page not found: ', savedMessage);
   end  
@@ -53862,15 +53890,14 @@ function loadSnapshotButton(savedMessage)
   local values = {}
   for v in string.gmatch(savedMessage .. separator, '(.-)' .. separator) do 
     table.insert(values, v)
-  end
+  end   
   
   local id = values[2];
-  local tag = values[3];
-  
-  
   local button = root:findByID(id, true);
   if(button ~= nil) then
+    local tag = values[3];
     button.tag = tag;
+    
     if(tag ~= '') then
       button.outlineStyle = OutlineStyle.FULL;
     else
@@ -53891,11 +53918,10 @@ function loadSetMacroButton(savedMessage)
   end
   
   local id = values[2];
-  local tag = values[3];
-  
   
   local button = root:findByID(id, true);
   if(button ~= nil) then
+    local tag = values[3];
     button.tag = tag;
     
     local v = tonumber(tag or '0') or 0
@@ -53925,13 +53951,12 @@ function loadRadialText(savedMessage)
   end
   
   local id = values[2];
-  local label = values[3];
-  local color = values[4];
-  
-  
   local text = root:findByID(id, true);
   if(text ~= nil) then
+    local label = values[3];
     text.values.text = label;
+    
+    local color = values[4];    
     text.textColor = loadColor(color);
   else
     print('RadialText not found: ', savedMessage);
@@ -53948,11 +53973,9 @@ function loadRadial(savedMessage)
   end
   
   local id = values[2];
-  local color = values[3];
-  
-  
   local radial = root:findByID(id, true);
-  if(radial ~= nil) then
+  if(radial ~= nil) then    
+    local color = values[3];
     radial.color = loadColor(color);
   else
     print('Radial not found: ', savedMessage);
@@ -54443,7 +54466,7 @@ end]]></value>
 <value><![CDATA[function onValueChanged(key)
   if((key ~= 'x') or (self.values.x ~= 0)) then return end
   
-  local savedMessage = "##PAGE: ^^aaaca182-e0c5-11f0-ba4e-2c33580a447a^^Layer 1^^(0.33333298563957,0.078641302883625,0,1)##SNAPSHOT BUTTON: e0f6e3f2-ea79-11f0-993d-2c33580a447a##ButtonSnapshot^^eb033b2a-ea79-11f0-85c8-2c33580a447a^^0.30708661675453|1|0.51968502998352|0.54330706596375|0.24409449100494|1|0.54330706596375|0.60629922151566|0.4960629940033|0.84251970052719|0.4960629940033|0.5039370059967|0.25196850299835|0.59055119752884|0.25196850299835|0.16535432636738|##ButtonSnapshot^^eb03c446-ea79-11f0-9df4-2c33580a447a^^0.30708661675453|1|0.48818898200989|0.44094488024712|0.74803149700165|1|0.54330706596375|0.60629922151566|0.96850395202637|0.84251970052719|0.37007874250412|0.5039370059967|0.25196850299835|0.59055119752884|0.29133859276772|0.11364471167326|##ButtonSnapshot^^eb043660-ea79-11f0-a99e-2c33580a447a^^0.30708661675453|1|0.48818898200989|0.44094488024712|0.74803149700165|1|0.54330706596375|0.60629922151566|0.96850395202637|0.84251970052719|0.17322835326195|0.5039370059967|0.25196850299835|0.37007874250412|0.29133859276772|0.13385826349258|##ButtonSnapshot^^eb048796-ea79-11f0-ac97-2c33580a447a^^##ButtonSnapshot^^eb04c53a-ea79-11f0-b3a7-2c33580a447a^^0.71653544902802|0.89763778448105|0.53543305397034|0.48031497001648|0.59842520952225|1|0.46456691622734|0.48818898200989|0.88188976049423|1|0.56692916154861|0.4960629940033|0.25196850299835|0.19685038924217|0.25196850299835|0.16535432636738|##ButtonSnapshot^^eb04f7bc-ea79-11f0-a67b-2c33580a447a^^##ButtonSnapshot^^eb051f62-ea79-11f0-a282-2c33580a447a^^0.30708661675453|0.96850395202637|0.69291341304779|0.45669290423393|0.24409449100494|1|0.39370077848434|0.47244095802307|0.96062994003296|0.43307086825371|0.6456692814827|0.5039370059967|0.25196850299835|0.59055119752884|0.25196850299835|0.16535432636738|##ButtonSnapshot^^eb054028-ea79-11f0-af86-2c33580a447a^^0.011900481767952|0.95275592803955|0.70866143703461|0.40944883227348|0.013165563344955|0.78740155696869|0.84403663873672|0.49600982666016|0.39370077848434|1|0.58267718553543|0.33858266472816|0.36220473051071|0.66141730546951|0.076753742992878|0.77165353298187|##GROUP SET MACRO: 57e9d5ea-e4f4-11f0-bf5a-2c33580a447a##ButtonSetMacro^^57e9d6da-e4f4-11f0-8190-2c33580a447a^^0##ButtonSetMacro^^57ea5092-e4f4-11f0-a5e2-2c33580a447a^^1##ButtonSetMacro^^57eaba00-e4f4-11f0-9e55-2c33580a447a^^0##ButtonSetMacro^^57eb0712-e4f4-11f0-8585-2c33580a447a^^0##ButtonSetMacro^^57eb3f0c-e4f4-11f0-b2a4-2c33580a447a^^0##ButtonSetMacro^^57eb6c8e-e4f4-11f0-8a95-2c33580a447a^^1##ButtonSetMacro^^57eb9a1a-e4f4-11f0-b6f6-2c33580a447a^^0##ButtonSetMacro^^57ebbe50-e4f4-11f0-86ec-2c33580a447a^^0##ButtonSetMacro^^57ebe5c4-e4f4-11f0-a1bb-2c33580a447a^^0##ButtonSetMacro^^57ec0f22-e4f4-11f0-a21d-2c33580a447a^^-1##ButtonSetMacro^^57ec3d80-e4f4-11f0-8cb1-2c33580a447a^^0##ButtonSetMacro^^57ec6f94-e4f4-11f0-8232-2c33580a447a^^0##ButtonSetMacro^^57ec99ce-e4f4-11f0-a813-2c33580a447a^^0##ButtonSetMacro^^57ecbd46-e4f4-11f0-84dc-2c33580a447a^^0##ButtonSetMacro^^57ecdca4-e4f4-11f0-ac97-2c33580a447a^^0##ButtonSetMacro^^57ecf7ac-e4f4-11f0-8662-2c33580a447a^^0##GROUP SET MACRO: 81635a86-e4f4-11f0-8f84-2c33580a447a##ButtonSetMacro^^81635b58-e4f4-11f0-9c2a-2c33580a447a^^0##ButtonSetMacro^^8163bb20-e4f4-11f0-a15b-2c33580a447a^^0##ButtonSetMacro^^8163ff36-e4f4-11f0-9d1e-2c33580a447a^^1##ButtonSetMacro^^81643442-e4f4-11f0-8526-2c33580a447a^^0##ButtonSetMacro^^81645e5e-e4f4-11f0-87c7-2c33580a447a^^0##ButtonSetMacro^^8164826c-e4f4-11f0-b0f5-2c33580a447a^^0##ButtonSetMacro^^81649fb8-e4f4-11f0-9e80-2c33580a447a^^-1##ButtonSetMacro^^8164b9bc-e4f4-11f0-9c1d-2c33580a447a^^0##ButtonSetMacro^^8164d03c-e4f4-11f0-9b29-2c33580a447a^^0##ButtonSetMacro^^8164e518-e4f4-11f0-83a8-2c33580a447a^^0##ButtonSetMacro^^8164f6e8-e4f4-11f0-a682-2c33580a447a^^0##ButtonSetMacro^^8165080e-e4f4-11f0-82c3-2c33580a447a^^0##ButtonSetMacro^^816518da-e4f4-11f0-a8a1-2c33580a447a^^0##ButtonSetMacro^^81652898-e4f4-11f0-b426-2c33580a447a^^0##ButtonSetMacro^^8165389c-e4f4-11f0-b802-2c33580a447a^^0##ButtonSetMacro^^81654814-e4f4-11f0-aa54-2c33580a447a^^0##GROUP RADIAL: d6782b42-e0c5-11f0-bb4d-2c33580a447a##RadialText^^d6782da4-e0c5-11f0-9f41-2c33580a447a^^39^^(1,0,0,1)##RadialText^^d6782ebc-e0c5-11f0-8375-2c33580a447a^^91^^(1,0,0,1)##RadialText^^d6782fac-e0c5-11f0-be4c-2c33580a447a^^63^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^d67830a6-e0c5-11f0-a56d-2c33580a447a^^66^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^d6783196-e0c5-11f0-931a-2c33580a447a^^31^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^d6783290-e0c5-11f0-a1fb-2c33580a447a^^91^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^d6783380-e0c5-11f0-88c4-2c33580a447a^^69^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^d6783466-e0c5-11f0-af72-2c33580a447a^^77^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^d6783556-e0c5-11f0-a0a5-2c33580a447a^^63^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^d6783632-e0c5-11f0-a072-2c33580a447a^^100^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^d6783722-e0c5-11f0-809a-2c33580a447a^^63^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^d6783808-e0c5-11f0-a544-2c33580a447a^^64^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^d67838ee-e0c5-11f0-bd26-2c33580a447a^^32^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^d67839ca-e0c5-11f0-8b2f-2c33580a447a^^75^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^d6783ab0-e0c5-11f0-9790-2c33580a447a^^32^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^d6783b96-e0c5-11f0-8335-2c33580a447a^^21^^(0.16078400611877,0.75686299800873,0,1)##RadialText^^4590ee58-e4f7-11f0-98ea-2c33580a447a^^Warp1^^(1,0,0,1)##RadialText^^6a6675fe-e4f7-11f0-b98a-2c33580a447a^^L1^^(1,0,0,1)##RadialText^^7accb0ac-e4f7-11f0-b6bf-2c33580a447a^^Cut1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^87fd2bc6-e4f7-11f0-a40b-2c33580a447a^^Res1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^9b429dba-e4f7-11f0-90e0-2c33580a447a^^Warp2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^9b429ee6-e4f7-11f0-8961-2c33580a447a^^L2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^9b429f7c-e4f7-11f0-9546-2c33580a447a^^Cut2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^9b429fd6-e4f7-11f0-abda-2c33580a447a^^Res2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^034d1a5c-e4f8-11f0-9846-2c33580a447a^^Warp3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^034d1ba6-e4f8-11f0-a44b-2c33580a447a^^L3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^034d1c3c-e4f8-11f0-8842-2c33580a447a^^VeloF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^034d1caa-e4f8-11f0-a040-2c33580a447a^^AmountF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^3706b8c6-e4f8-11f0-a5c9-2c33580a447a^^LFO1 S^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^3706ba42-e4f8-11f0-b8b0-2c33580a447a^^LFO1 A^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^3706bad8-e4f8-11f0-82f0-2c33580a447a^^Drive^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^3706bb50-e4f8-11f0-9198-2c33580a447a^^VCA R^^(0.16078400611877,0.75686299800873,0,1)##RadialController^^d6782c1e-e0c5-11f0-98bc-2c33580a447a^^(1,0,0,1)##RadialController^^d6782dfe-e0c5-11f0-8651-2c33580a447a^^(1,0,0,1)##RadialController^^d6782f0c-e0c5-11f0-9b70-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^d6782ffc-e0c5-11f0-bea1-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^d6783100-e0c5-11f0-a57d-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^d67831e6-e0c5-11f0-a921-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^d67832d6-e0c5-11f0-baa4-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^d67833c6-e0c5-11f0-8675-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^d67834b6-e0c5-11f0-a1e3-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^d678359c-e0c5-11f0-9b19-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^d6783682-e0c5-11f0-b033-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^d6783772-e0c5-11f0-b4cb-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^d678384e-e0c5-11f0-bfd4-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^d6783934-e0c5-11f0-8d9a-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^d6783a10-e0c5-11f0-8838-2c33580a447a^^(0.60000002384186,0.12133199721575,0,1)##RadialController^^d6783af6-e0c5-11f0-9346-2c33580a447a^^(0.16078400611877,0.75686299800873,0,1)######PAGE: ^^aaaca2cc-e0c5-11f0-ac7d-2c33580a447a^^ Layer 2^^(0,0.20000000298023,0.0044408799149096,1)##SNAPSHOT BUTTON: b8316e20-ea7d-11f0-ae9b-2c33580a447a##ButtonSnapshot^^b8316e52-ea7d-11f0-a862-2c33580a447a^^##ButtonSnapshot^^b831b498-ea7d-11f0-b407-2c33580a447a^^##ButtonSnapshot^^b831ed6e-ea7d-11f0-831c-2c33580a447a^^##ButtonSnapshot^^b8321bd6-ea7d-11f0-b865-2c33580a447a^^##ButtonSnapshot^^b832423c-ea7d-11f0-856b-2c33580a447a^^##ButtonSnapshot^^b83262e4-ea7d-11f0-9e66-2c33580a447a^^##ButtonSnapshot^^b8327df6-ea7d-11f0-a807-2c33580a447a^^##ButtonSnapshot^^b8329764-ea7d-11f0-96c0-2c33580a447a^^##GROUP SET MACRO: b832c11c-ea7d-11f0-a0de-2c33580a447a##ButtonSetMacro^^b832c130-ea7d-11f0-a878-2c33580a447a^^0##ButtonSetMacro^^b832d594-ea7d-11f0-885d-2c33580a447a^^1##ButtonSetMacro^^b832e926-ea7d-11f0-b3fd-2c33580a447a^^0##ButtonSetMacro^^b8330492-ea7d-11f0-8583-2c33580a447a^^0##ButtonSetMacro^^b8331bf8-ea7d-11f0-8ae8-2c33580a447a^^0##ButtonSetMacro^^b8333160-ea7d-11f0-b6ce-2c33580a447a^^1##ButtonSetMacro^^b83346b4-ea7d-11f0-91e8-2c33580a447a^^0##ButtonSetMacro^^b8335a6e-ea7d-11f0-bdec-2c33580a447a^^0##ButtonSetMacro^^b8336f22-ea7d-11f0-bfa1-2c33580a447a^^0##ButtonSetMacro^^b83383f4-ea7d-11f0-bbc3-2c33580a447a^^-1##ButtonSetMacro^^b833997a-ea7d-11f0-94b1-2c33580a447a^^0##ButtonSetMacro^^b833acc6-ea7d-11f0-b3fc-2c33580a447a^^0##ButtonSetMacro^^b833c260-ea7d-11f0-a36d-2c33580a447a^^0##ButtonSetMacro^^b833d58e-ea7d-11f0-b00e-2c33580a447a^^0##ButtonSetMacro^^b833ea7e-ea7d-11f0-98a9-2c33580a447a^^0##ButtonSetMacro^^b83406b2-ea7d-11f0-a956-2c33580a447a^^0##GROUP SET MACRO: b8343132-ea7d-11f0-b34a-2c33580a447a##ButtonSetMacro^^b8343146-ea7d-11f0-b9cc-2c33580a447a^^0##ButtonSetMacro^^b83444a6-ea7d-11f0-9538-2c33580a447a^^0##ButtonSetMacro^^b8345acc-ea7d-11f0-9562-2c33580a447a^^1##ButtonSetMacro^^b8346eb8-ea7d-11f0-904e-2c33580a447a^^0##ButtonSetMacro^^b83482e0-ea7d-11f0-937f-2c33580a447a^^0##ButtonSetMacro^^b83496b8-ea7d-11f0-82f1-2c33580a447a^^0##ButtonSetMacro^^b834aaea-ea7d-11f0-ac9a-2c33580a447a^^-1##ButtonSetMacro^^b834be0e-ea7d-11f0-995b-2c33580a447a^^0##ButtonSetMacro^^b834d2ea-ea7d-11f0-ad4a-2c33580a447a^^0##ButtonSetMacro^^b834e65e-ea7d-11f0-8b13-2c33580a447a^^0##ButtonSetMacro^^b834fa90-ea7d-11f0-899e-2c33580a447a^^0##ButtonSetMacro^^b8350e36-ea7d-11f0-8d34-2c33580a447a^^0##ButtonSetMacro^^b835220e-ea7d-11f0-aefc-2c33580a447a^^0##ButtonSetMacro^^b83536a4-ea7d-11f0-8ccc-2c33580a447a^^0##ButtonSetMacro^^b8354b62-ea7d-11f0-90ed-2c33580a447a^^0##ButtonSetMacro^^b8356250-ea7d-11f0-92c3-2c33580a447a^^0##GROUP RADIAL: b830b82c-ea7d-11f0-a27e-2c33580a447a##RadialText^^b830ba20-ea7d-11f0-96ee-2c33580a447a^^39^^(1,0,0,1)##RadialText^^b830bb06-ea7d-11f0-bd2b-2c33580a447a^^100^^(1,0,0,1)##RadialText^^b830bbc4-ea7d-11f0-a30c-2c33580a447a^^66^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830bc6e-ea7d-11f0-b9c6-2c33580a447a^^69^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830bd4a-ea7d-11f0-8f14-2c33580a447a^^31^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830bdd6-ea7d-11f0-8d06-2c33580a447a^^100^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830be58-ea7d-11f0-89a1-2c33580a447a^^112^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830bee4-ea7d-11f0-8fe8-2c33580a447a^^120^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830bf66-ea7d-11f0-9973-2c33580a447a^^63^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830bfe8-ea7d-11f0-b1f1-2c33580a447a^^96^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830c060-ea7d-11f0-9fe4-2c33580a447a^^106^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c0e2-ea7d-11f0-9185-2c33580a447a^^107^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c15a-ea7d-11f0-abe6-2c33580a447a^^32^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c1d2-ea7d-11f0-ac03-2c33580a447a^^75^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c254-ea7d-11f0-bc22-2c33580a447a^^32^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^b830c2d6-ea7d-11f0-9f4a-2c33580a447a^^21^^(0.16078400611877,0.75686299800873,0,1)##RadialText^^b830c312-ea7d-11f0-af71-2c33580a447a^^Warp1^^(1,0,0,1)##RadialText^^b830c34e-ea7d-11f0-8ca1-2c33580a447a^^L1^^(1,0,0,1)##RadialText^^b830c38a-ea7d-11f0-a89a-2c33580a447a^^Cut1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830c3bc-ea7d-11f0-90ac-2c33580a447a^^Res1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830c3f8-ea7d-11f0-b6c4-2c33580a447a^^Warp2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830c434-ea7d-11f0-b136-2c33580a447a^^L2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830c466-ea7d-11f0-b68a-2c33580a447a^^Cut2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830c4a2-ea7d-11f0-b47d-2c33580a447a^^Res2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830c4d4-ea7d-11f0-b6f1-2c33580a447a^^Warp3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830c510-ea7d-11f0-8682-2c33580a447a^^L3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830c556-ea7d-11f0-9b6b-2c33580a447a^^VeloF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c592-ea7d-11f0-802a-2c33580a447a^^AmountF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c5c4-ea7d-11f0-baeb-2c33580a447a^^LFO1 S^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c600-ea7d-11f0-8330-2c33580a447a^^LFO1 A^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c632-ea7d-11f0-af71-2c33580a447a^^Drive^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^b830c66e-ea7d-11f0-a9a9-2c33580a447a^^VCA R^^(0.16078400611877,0.75686299800873,0,1)##RadialController^^b830b912-ea7d-11f0-a8f3-2c33580a447a^^(1,0,0,1)##RadialController^^b830baa2-ea7d-11f0-90ee-2c33580a447a^^(1,0,0,1)##RadialController^^b830bb6a-ea7d-11f0-becd-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^b830bc14-ea7d-11f0-9f29-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^b830bcbe-ea7d-11f0-8ba5-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^b830bd86-ea7d-11f0-b549-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^b830be12-ea7d-11f0-98fa-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^b830be94-ea7d-11f0-aeb9-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^b830bf20-ea7d-11f0-b6ee-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^b830bfa2-ea7d-11f0-b7e2-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^b830c01a-ea7d-11f0-879a-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^b830c09c-ea7d-11f0-aba0-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^b830c114-ea7d-11f0-8565-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^b830c196-ea7d-11f0-9b1a-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^b830c20e-ea7d-11f0-81b4-2c33580a447a^^(0.60000002384186,0.12133199721575,0,1)##RadialController^^b830c290-ea7d-11f0-98ee-2c33580a447a^^(0.16078400611877,0.75686299800873,0,1)######PAGE: ^^aaaca39e-e0c5-11f0-8010-2c33580a447a^^Empty Layer^^(0.25,0.25,0.25,1)##SNAPSHOT BUTTON: 5839839e-ea7e-11f0-b164-2c33580a447a##ButtonSnapshot^^583983da-ea7e-11f0-8fb8-2c33580a447a^^##ButtonSnapshot^^5839d1aa-ea7e-11f0-ade7-2c33580a447a^^##ButtonSnapshot^^583a0e0e-ea7e-11f0-899f-2c33580a447a^^##ButtonSnapshot^^583a4b1c-ea7e-11f0-a91f-2c33580a447a^^##ButtonSnapshot^^583a83b6-ea7e-11f0-b225-2c33580a447a^^##ButtonSnapshot^^583ab872-ea7e-11f0-bad8-2c33580a447a^^##ButtonSnapshot^^583ae9aa-ea7e-11f0-86fa-2c33580a447a^^##ButtonSnapshot^^583b12f4-ea7e-11f0-86ae-2c33580a447a^^##GROUP SET MACRO: 583b5444-ea7e-11f0-87ce-2c33580a447a##ButtonSetMacro^^583b5458-ea7e-11f0-bd43-2c33580a447a^^0##ButtonSetMacro^^583b6fd8-ea7e-11f0-94ad-2c33580a447a^^1##ButtonSetMacro^^583b864e-ea7e-11f0-b7fb-2c33580a447a^^0##ButtonSetMacro^^583b9c6a-ea7e-11f0-b926-2c33580a447a^^0##ButtonSetMacro^^583baf70-ea7e-11f0-80e6-2c33580a447a^^0##ButtonSetMacro^^583bc24e-ea7e-11f0-9e9d-2c33580a447a^^1##ButtonSetMacro^^583bd2ca-ea7e-11f0-bf42-2c33580a447a^^0##ButtonSetMacro^^583be2d8-ea7e-11f0-86da-2c33580a447a^^0##ButtonSetMacro^^583bf278-ea7e-11f0-8854-2c33580a447a^^0##ButtonSetMacro^^583c025e-ea7e-11f0-b781-2c33580a447a^^-1##ButtonSetMacro^^583c1208-ea7e-11f0-b0a7-2c33580a447a^^0##ButtonSetMacro^^583c21da-ea7e-11f0-986b-2c33580a447a^^0##ButtonSetMacro^^583c318e-ea7e-11f0-8771-2c33580a447a^^0##ButtonSetMacro^^583c414c-ea7e-11f0-9bdd-2c33580a447a^^0##ButtonSetMacro^^583c50c4-ea7e-11f0-bebd-2c33580a447a^^0##ButtonSetMacro^^583c619a-ea7e-11f0-8fef-2c33580a447a^^0##GROUP SET MACRO: 583c8044-ea7e-11f0-80fa-2c33580a447a##ButtonSetMacro^^583c804e-ea7e-11f0-b2fa-2c33580a447a^^0##ButtonSetMacro^^583c900c-ea7e-11f0-99e4-2c33580a447a^^0##ButtonSetMacro^^583ca0f6-ea7e-11f0-bcf9-2c33580a447a^^1##ButtonSetMacro^^583cb0be-ea7e-11f0-bc23-2c33580a447a^^0##ButtonSetMacro^^583cc0b8-ea7e-11f0-a0a2-2c33580a447a^^0##ButtonSetMacro^^583cd0bc-ea7e-11f0-93d0-2c33580a447a^^0##ButtonSetMacro^^583ce052-ea7e-11f0-905a-2c33580a447a^^-1##ButtonSetMacro^^583cf060-ea7e-11f0-98c5-2c33580a447a^^0##ButtonSetMacro^^583d00fa-ea7e-11f0-abf2-2c33580a447a^^0##ButtonSetMacro^^583d11c6-ea7e-11f0-bc0b-2c33580a447a^^0##ButtonSetMacro^^583d2292-ea7e-11f0-b507-2c33580a447a^^0##ButtonSetMacro^^583d3264-ea7e-11f0-9816-2c33580a447a^^0##ButtonSetMacro^^583d43ee-ea7e-11f0-bbcc-2c33580a447a^^0##ButtonSetMacro^^583d5488-ea7e-11f0-8708-2c33580a447a^^0##ButtonSetMacro^^583d659a-ea7e-11f0-b42e-2c33580a447a^^0##ButtonSetMacro^^583d75bc-ea7e-11f0-808e-2c33580a447a^^0##GROUP RADIAL: 583886e2-ea7e-11f0-9069-2c33580a447a##RadialText^^5838896c-ea7e-11f0-a024-2c33580a447a^^39^^(1,0,0,1)##RadialText^^58388b2e-ea7e-11f0-b14a-2c33580a447a^^52^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58388c96-ea7e-11f0-bbc0-2c33580a447a^^66^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58388e12-ea7e-11f0-9e54-2c33580a447a^^69^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58388f48-ea7e-11f0-9bb8-2c33580a447a^^31^^(1,0,0,1)##RadialText^^5838907e-ea7e-11f0-8905-2c33580a447a^^52^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838918c-ea7e-11f0-8c21-2c33580a447a^^69^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^583892e0-ea7e-11f0-b2df-2c33580a447a^^77^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^5838942a-ea7e-11f0-8c31-2c33580a447a^^63^^(1,0,0,1)##RadialText^^5838952e-ea7e-11f0-9f0c-2c33580a447a^^105^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838963c-ea7e-11f0-9769-2c33580a447a^^63^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389740-ea7e-11f0-812a-2c33580a447a^^64^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^5838984e-ea7e-11f0-9db6-2c33580a447a^^32^^(1,0,0,1)##RadialText^^5838997a-ea7e-11f0-8797-2c33580a447a^^75^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58389a92-ea7e-11f0-af2c-2c33580a447a^^32^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389ba0-ea7e-11f0-a7c4-2c33580a447a^^21^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58389c22-ea7e-11f0-af05-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^58389cae-ea7e-11f0-946c-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58389d12-ea7e-11f0-a2e0-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389d76-ea7e-11f0-9131-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58389df8-ea7e-11f0-b145-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^58389e66-ea7e-11f0-810b-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58389ee8-ea7e-11f0-8023-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389f6a-ea7e-11f0-aa50-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58389fd8-ea7e-11f0-9446-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^5838a03c-ea7e-11f0-b1ff-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838a0a0-ea7e-11f0-a6ea-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^5838a10e-ea7e-11f0-a315-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^5838a172-ea7e-11f0-bf2a-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^5838a1d6-ea7e-11f0-a47f-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838a23a-ea7e-11f0-b32e-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^5838a2a8-ea7e-11f0-bc89-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialController^^5838880e-ea7e-11f0-91e0-2c33580a447a^^(1,0,0,1)##RadialController^^58388a5c-ea7e-11f0-bf55-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^58388c00-ea7e-11f0-b075-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^58388d4a-ea7e-11f0-bc8e-2c33580a447a^^(0.29019609093666,0.37647059559822,0.99215686321259,1)##RadialController^^58388ea8-ea7e-11f0-9e2e-2c33580a447a^^(1,0,0,1)##RadialController^^58388fd4-ea7e-11f0-9f80-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^58389100-ea7e-11f0-88b3-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^5838920e-ea7e-11f0-bfb4-2c33580a447a^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialController^^58389380-ea7e-11f0-943e-2c33580a447a^^(1,0,0,1)##RadialController^^583894ac-ea7e-11f0-8ec2-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^5838959c-ea7e-11f0-b575-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^583896b4-ea7e-11f0-a34e-2c33580a447a^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialController^^583897c2-ea7e-11f0-87bf-2c33580a447a^^(1,0,0,1)##RadialController^^583898d0-ea7e-11f0-a0a5-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^58389a06-ea7e-11f0-817a-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^58389b0a-ea7e-11f0-b926-2c33580a447a^^(0.29019600152969,0.37647101283073,0.99215698242188,1)###### ";
+  local savedMessage = "CONTROL(groupSettings) ##PAGE: ^^aaaca182-e0c5-11f0-ba4e-2c33580a447a^^Layer 1^^(0.33333298563957,0.078641302883625,0,1)##SNAPSHOT BUTTON: e0f6e3f2-ea79-11f0-993d-2c33580a447a##ButtonSnapshot^^eb033b2a-ea79-11f0-85c8-2c33580a447a^^0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.29133859276772|0.4960629940033|0.44881889224052|0.70866143703461|0.16535432636738|0.047244094312191|##ButtonSnapshot^^eb03c446-ea79-11f0-9df4-2c33580a447a^^0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.24409449100494|0.4960629940033|0.24409449100494|0.32283464074135|0.16535432636738|0.047244094312191|##ButtonSnapshot^^eb043660-ea79-11f0-a99e-2c33580a447a^^0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.46456691622734|0.4960629940033|0.24409449100494|0.32283464074135|0.16535432636738|0.047244094312191|##ButtonSnapshot^^eb048796-ea79-11f0-ac97-2c33580a447a^^0.11811023950577|1|0.86614173650742|0.4960629940033|0.36220473051071|1|0.37007874250412|0.4960629940033|0.4960629940033|0.88976377248764|0.62204724550247|0.6535432934761|0.24409449100494|0.67716532945633|0.16535432636738|0.047244094312191|##ButtonSnapshot^^eb04c53a-ea79-11f0-b3a7-2c33580a447a^^0.13951329886913|0.81047344207764|0.26578149199486|0.47710937261581|0.24409449100494|0.81047344207764|0.74963879585266|0.35518264770508|0.4960629940033|0.41042900085449|0.1265409886837|0.62206321954727|0.25196850299835|0.58267718553543|0.27889236807823|0.043204955756664|##ButtonSnapshot^^eb04f7bc-ea79-11f0-a67b-2c33580a447a^^0.11811023950577|1|0.86614173650742|0.4960629940033|0.85826772451401|1|0.37007874250412|0.4960629940033|0.44094488024712|0|0.17322835326195|0.4960629940033|0.44881889224052|0.56692916154861|0.16535432636738|0.047244094312191|##ButtonSnapshot^^eb051f62-ea79-11f0-a282-2c33580a447a^^0.30708661675453|0.96850395202637|0.69291341304779|0.45669290423393|0.24409449100494|1|0.39370077848434|0.47244095802307|0.96062994003296|0.43307086825371|0.6456692814827|0.5039370059967|0.25196850299835|0.59055119752884|0.25196850299835|0.16535432636738|##ButtonSnapshot^^eb054028-ea79-11f0-af86-2c33580a447a^^0.011900481767952|0.95275592803955|0.70866143703461|0.40944883227348|0.013165563344955|0.78740155696869|0.84403663873672|0.49600982666016|0.39370077848434|1|0.58267718553543|0.33858266472816|0.36220473051071|0.66141730546951|0.076753742992878|0.77165353298187|##GROUP SET MACRO: 57e9d5ea-e4f4-11f0-bf5a-2c33580a447a##ButtonSetMacro^^57e9d6da-e4f4-11f0-8190-2c33580a447a^^0##ButtonSetMacro^^57ea5092-e4f4-11f0-a5e2-2c33580a447a^^1##ButtonSetMacro^^57eaba00-e4f4-11f0-9e55-2c33580a447a^^0##ButtonSetMacro^^57eb0712-e4f4-11f0-8585-2c33580a447a^^0##ButtonSetMacro^^57eb3f0c-e4f4-11f0-b2a4-2c33580a447a^^0##ButtonSetMacro^^57eb6c8e-e4f4-11f0-8a95-2c33580a447a^^1##ButtonSetMacro^^57eb9a1a-e4f4-11f0-b6f6-2c33580a447a^^0##ButtonSetMacro^^57ebbe50-e4f4-11f0-86ec-2c33580a447a^^0##ButtonSetMacro^^57ebe5c4-e4f4-11f0-a1bb-2c33580a447a^^0##ButtonSetMacro^^57ec0f22-e4f4-11f0-a21d-2c33580a447a^^-1##ButtonSetMacro^^57ec3d80-e4f4-11f0-8cb1-2c33580a447a^^0##ButtonSetMacro^^57ec6f94-e4f4-11f0-8232-2c33580a447a^^0##ButtonSetMacro^^57ec99ce-e4f4-11f0-a813-2c33580a447a^^0##ButtonSetMacro^^57ecbd46-e4f4-11f0-84dc-2c33580a447a^^0##ButtonSetMacro^^57ecdca4-e4f4-11f0-ac97-2c33580a447a^^0##ButtonSetMacro^^57ecf7ac-e4f4-11f0-8662-2c33580a447a^^0##GROUP SET MACRO: 81635a86-e4f4-11f0-8f84-2c33580a447a##ButtonSetMacro^^81635b58-e4f4-11f0-9c2a-2c33580a447a^^0##ButtonSetMacro^^8163bb20-e4f4-11f0-a15b-2c33580a447a^^0##ButtonSetMacro^^8163ff36-e4f4-11f0-9d1e-2c33580a447a^^1##ButtonSetMacro^^81643442-e4f4-11f0-8526-2c33580a447a^^0##ButtonSetMacro^^81645e5e-e4f4-11f0-87c7-2c33580a447a^^0##ButtonSetMacro^^8164826c-e4f4-11f0-b0f5-2c33580a447a^^0##ButtonSetMacro^^81649fb8-e4f4-11f0-9e80-2c33580a447a^^-1##ButtonSetMacro^^8164b9bc-e4f4-11f0-9c1d-2c33580a447a^^0##ButtonSetMacro^^8164d03c-e4f4-11f0-9b29-2c33580a447a^^0##ButtonSetMacro^^8164e518-e4f4-11f0-83a8-2c33580a447a^^0##ButtonSetMacro^^8164f6e8-e4f4-11f0-a682-2c33580a447a^^0##ButtonSetMacro^^8165080e-e4f4-11f0-82c3-2c33580a447a^^0##ButtonSetMacro^^816518da-e4f4-11f0-a8a1-2c33580a447a^^0##ButtonSetMacro^^81652898-e4f4-11f0-b426-2c33580a447a^^0##ButtonSetMacro^^8165389c-e4f4-11f0-b802-2c33580a447a^^0##ButtonSetMacro^^81654814-e4f4-11f0-aa54-2c33580a447a^^0##GROUP RADIAL: d6782b42-e0c5-11f0-bb4d-2c33580a447a##RadialText^^d6782da4-e0c5-11f0-9f41-2c33580a447a^^15^^(1,0,0,1)##RadialText^^d6782ebc-e0c5-11f0-8375-2c33580a447a^^127^^(1,0,0,1)##RadialText^^d6782fac-e0c5-11f0-be4c-2c33580a447a^^110^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^d67830a6-e0c5-11f0-a56d-2c33580a447a^^63^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^d6783196-e0c5-11f0-931a-2c33580a447a^^46^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^d6783290-e0c5-11f0-a1fb-2c33580a447a^^127^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^d6783380-e0c5-11f0-88c4-2c33580a447a^^47^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^d6783466-e0c5-11f0-af72-2c33580a447a^^63^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^d6783556-e0c5-11f0-a0a5-2c33580a447a^^63^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^d6783632-e0c5-11f0-a072-2c33580a447a^^113^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^d6783722-e0c5-11f0-809a-2c33580a447a^^79^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^d6783808-e0c5-11f0-a544-2c33580a447a^^83^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^d67838ee-e0c5-11f0-bd26-2c33580a447a^^31^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^d67839ca-e0c5-11f0-8b2f-2c33580a447a^^86^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^d6783ab0-e0c5-11f0-9790-2c33580a447a^^21^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^d6783b96-e0c5-11f0-8335-2c33580a447a^^6^^(0.16078400611877,0.75686299800873,0,1)##RadialText^^4590ee58-e4f7-11f0-98ea-2c33580a447a^^Warp1^^(1,0,0,1)##RadialText^^6a6675fe-e4f7-11f0-b98a-2c33580a447a^^L1^^(1,0,0,1)##RadialText^^7accb0ac-e4f7-11f0-b6bf-2c33580a447a^^Cut1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^87fd2bc6-e4f7-11f0-a40b-2c33580a447a^^Res1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^9b429dba-e4f7-11f0-90e0-2c33580a447a^^Warp2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^9b429ee6-e4f7-11f0-8961-2c33580a447a^^L2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^9b429f7c-e4f7-11f0-9546-2c33580a447a^^Cut2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^9b429fd6-e4f7-11f0-abda-2c33580a447a^^Res2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^034d1a5c-e4f8-11f0-9846-2c33580a447a^^Warp3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^034d1ba6-e4f8-11f0-a44b-2c33580a447a^^L3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^034d1c3c-e4f8-11f0-8842-2c33580a447a^^VeloF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^034d1caa-e4f8-11f0-a040-2c33580a447a^^AmountF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^3706b8c6-e4f8-11f0-a5c9-2c33580a447a^^LFO1 S^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^3706ba42-e4f8-11f0-b8b0-2c33580a447a^^LFO1 A^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^3706bad8-e4f8-11f0-82f0-2c33580a447a^^Drive^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^3706bb50-e4f8-11f0-9198-2c33580a447a^^VCA R^^(0.16078400611877,0.75686299800873,0,1)##RadialController^^d6782c1e-e0c5-11f0-98bc-2c33580a447a^^(1,0,0,1)##RadialController^^d6782dfe-e0c5-11f0-8651-2c33580a447a^^(1,0,0,1)##RadialController^^d6782f0c-e0c5-11f0-9b70-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^d6782ffc-e0c5-11f0-bea1-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^d6783100-e0c5-11f0-a57d-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^d67831e6-e0c5-11f0-a921-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^d67832d6-e0c5-11f0-baa4-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^d67833c6-e0c5-11f0-8675-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^d67834b6-e0c5-11f0-a1e3-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^d678359c-e0c5-11f0-9b19-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^d6783682-e0c5-11f0-b033-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^d6783772-e0c5-11f0-b4cb-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^d678384e-e0c5-11f0-bfd4-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^d6783934-e0c5-11f0-8d9a-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^d6783a10-e0c5-11f0-8838-2c33580a447a^^(0.60000002384186,0.12133199721575,0,1)##RadialController^^d6783af6-e0c5-11f0-9346-2c33580a447a^^(0.16078400611877,0.75686299800873,0,1)######PAGE: ^^aaaca2cc-e0c5-11f0-ac7d-2c33580a447a^^ Layer 2^^(0,0.20000000298023,0.0044408799149096,1)##SNAPSHOT BUTTON: b8316e20-ea7d-11f0-ae9b-2c33580a447a##ButtonSnapshot^^b8316e52-ea7d-11f0-a862-2c33580a447a^^0.30708661675453|0.0051890816539526|0.17336820065975|0.49600198864937|0.24409449100494|0.0051890816539526|0.13074786961079|0.40714263916016|0.4960629940033|0.0051890816539526|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|##ButtonSnapshot^^b831b498-ea7d-11f0-b407-2c33580a447a^^0.30708661675453|0.74936616420746|0.43742015957832|0.49600198864937|0.24409449100494|0.74936616420746|0.39479979872704|0.40714263916016|0.4960629940033|0.74936616420746|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|##ButtonSnapshot^^b831ed6e-ea7d-11f0-831c-2c33580a447a^^0.30708661675453|0.74936616420746|0.5365434885025|0.49600198864937|0.24409449100494|0.74936616420746|0.49392309784889|0.40714263916016|0.4960629940033|0.74936616420746|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|##ButtonSnapshot^^b8321bd6-ea7d-11f0-b865-2c33580a447a^^0.30708661675453|1|0.71155273914337|0.49600198864937|0.24409449100494|0.96585613489151|0.66893231868744|0.40714263916016|0.4960629940033|1|0.55869925022125|0.47490426898003|0.25196850299835|0.59055119752884|0.25196850299835|0|##ButtonSnapshot^^b832423c-ea7d-11f0-856b-2c33580a447a^^##ButtonSnapshot^^b83262e4-ea7d-11f0-9e66-2c33580a447a^^##ButtonSnapshot^^b8327df6-ea7d-11f0-a807-2c33580a447a^^##ButtonSnapshot^^b8329764-ea7d-11f0-96c0-2c33580a447a^^##GROUP SET MACRO: b832c11c-ea7d-11f0-a0de-2c33580a447a##ButtonSetMacro^^b832c130-ea7d-11f0-a878-2c33580a447a^^0##ButtonSetMacro^^b832d594-ea7d-11f0-885d-2c33580a447a^^1##ButtonSetMacro^^b832e926-ea7d-11f0-b3fd-2c33580a447a^^0##ButtonSetMacro^^b8330492-ea7d-11f0-8583-2c33580a447a^^0##ButtonSetMacro^^b8331bf8-ea7d-11f0-8ae8-2c33580a447a^^0##ButtonSetMacro^^b8333160-ea7d-11f0-b6ce-2c33580a447a^^1##ButtonSetMacro^^b83346b4-ea7d-11f0-91e8-2c33580a447a^^0##ButtonSetMacro^^b8335a6e-ea7d-11f0-bdec-2c33580a447a^^0##ButtonSetMacro^^b8336f22-ea7d-11f0-bfa1-2c33580a447a^^0##ButtonSetMacro^^b83383f4-ea7d-11f0-bbc3-2c33580a447a^^1##ButtonSetMacro^^b833997a-ea7d-11f0-94b1-2c33580a447a^^0##ButtonSetMacro^^b833acc6-ea7d-11f0-b3fc-2c33580a447a^^0##ButtonSetMacro^^b833c260-ea7d-11f0-a36d-2c33580a447a^^0##ButtonSetMacro^^b833d58e-ea7d-11f0-b00e-2c33580a447a^^0##ButtonSetMacro^^b833ea7e-ea7d-11f0-98a9-2c33580a447a^^0##ButtonSetMacro^^b83406b2-ea7d-11f0-a956-2c33580a447a^^0##GROUP SET MACRO: b8343132-ea7d-11f0-b34a-2c33580a447a##ButtonSetMacro^^b8343146-ea7d-11f0-b9cc-2c33580a447a^^0##ButtonSetMacro^^b83444a6-ea7d-11f0-9538-2c33580a447a^^0##ButtonSetMacro^^b8345acc-ea7d-11f0-9562-2c33580a447a^^1##ButtonSetMacro^^b8346eb8-ea7d-11f0-904e-2c33580a447a^^0##ButtonSetMacro^^b83482e0-ea7d-11f0-937f-2c33580a447a^^0##ButtonSetMacro^^b83496b8-ea7d-11f0-82f1-2c33580a447a^^0##ButtonSetMacro^^b834aaea-ea7d-11f0-ac9a-2c33580a447a^^1##ButtonSetMacro^^b834be0e-ea7d-11f0-995b-2c33580a447a^^0##ButtonSetMacro^^b834d2ea-ea7d-11f0-ad4a-2c33580a447a^^0##ButtonSetMacro^^b834e65e-ea7d-11f0-8b13-2c33580a447a^^0##ButtonSetMacro^^b834fa90-ea7d-11f0-899e-2c33580a447a^^0##ButtonSetMacro^^b8350e36-ea7d-11f0-8d34-2c33580a447a^^0##ButtonSetMacro^^b835220e-ea7d-11f0-aefc-2c33580a447a^^0##ButtonSetMacro^^b83536a4-ea7d-11f0-8ccc-2c33580a447a^^0##ButtonSetMacro^^b8354b62-ea7d-11f0-90ed-2c33580a447a^^0##ButtonSetMacro^^b8356250-ea7d-11f0-92c3-2c33580a447a^^0##GROUP RADIAL: b830b82c-ea7d-11f0-a27e-2c33580a447a##RadialText^^b830ba20-ea7d-11f0-96ee-2c33580a447a^^39^^(1,0,0,1)##RadialText^^b830bb06-ea7d-11f0-bd2b-2c33580a447a^^55^^(1,0,0,1)##RadialText^^b830bbc4-ea7d-11f0-a30c-2c33580a447a^^79^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830bc6e-ea7d-11f0-b9c6-2c33580a447a^^63^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830bd4a-ea7d-11f0-8f14-2c33580a447a^^31^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830bdd6-ea7d-11f0-8d06-2c33580a447a^^55^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830be58-ea7d-11f0-89a1-2c33580a447a^^79^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830bee4-ea7d-11f0-8fe8-2c33580a447a^^52^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830bf66-ea7d-11f0-9973-2c33580a447a^^63^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830bfe8-ea7d-11f0-b1f1-2c33580a447a^^55^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830c060-ea7d-11f0-9fe4-2c33580a447a^^29^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c0e2-ea7d-11f0-9185-2c33580a447a^^60^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c15a-ea7d-11f0-abe6-2c33580a447a^^32^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c1d2-ea7d-11f0-ac03-2c33580a447a^^87^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c254-ea7d-11f0-bc22-2c33580a447a^^32^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^b830c2d6-ea7d-11f0-9f4a-2c33580a447a^^18^^(0.16078400611877,0.75686299800873,0,1)##RadialText^^b830c312-ea7d-11f0-af71-2c33580a447a^^Warp1^^(1,0,0,1)##RadialText^^b830c34e-ea7d-11f0-8ca1-2c33580a447a^^L1^^(1,0,0,1)##RadialText^^b830c38a-ea7d-11f0-a89a-2c33580a447a^^Cut1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830c3bc-ea7d-11f0-90ac-2c33580a447a^^Res1^^(0.70588201284409,0.066666699945927,1,1)##RadialText^^b830c3f8-ea7d-11f0-b6c4-2c33580a447a^^Warp2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830c434-ea7d-11f0-b136-2c33580a447a^^L2^^(0.70980399847031,0.28627499938011,0,1)##RadialText^^b830c466-ea7d-11f0-b68a-2c33580a447a^^Cut2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830c4a2-ea7d-11f0-b47d-2c33580a447a^^Res2^^(1,0.53333300352097,0.92549002170563,1)##RadialText^^b830c4d4-ea7d-11f0-b6f1-2c33580a447a^^Warp3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830c510-ea7d-11f0-8682-2c33580a447a^^L3^^(1,0.82745099067688,0.33333298563957,1)##RadialText^^b830c556-ea7d-11f0-9b6b-2c33580a447a^^VeloF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c592-ea7d-11f0-802a-2c33580a447a^^AmountF1^^(0.98039197921753,0.82352900505066,1,1)##RadialText^^b830c5c4-ea7d-11f0-baeb-2c33580a447a^^LFO1 S^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c600-ea7d-11f0-8330-2c33580a447a^^LFO1 A^^(0,0.1843139976263,0.70980399847031,1)##RadialText^^b830c632-ea7d-11f0-af71-2c33580a447a^^Drive^^(0.60000002384186,0.12156900018454,0,1)##RadialText^^b830c66e-ea7d-11f0-a9a9-2c33580a447a^^VCA R^^(0.16078400611877,0.75686299800873,0,1)##RadialController^^b830b912-ea7d-11f0-a8f3-2c33580a447a^^(1,0,0,1)##RadialController^^b830baa2-ea7d-11f0-90ee-2c33580a447a^^(1,0,0,1)##RadialController^^b830bb6a-ea7d-11f0-becd-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^b830bc14-ea7d-11f0-9f29-2c33580a447a^^(0.70578801631927,0.066666603088379,1,1)##RadialController^^b830bcbe-ea7d-11f0-8ba5-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^b830bd86-ea7d-11f0-b549-2c33580a447a^^(0.71111100912094,0.28760200738907,0,1)##RadialController^^b830be12-ea7d-11f0-98fa-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^b830be94-ea7d-11f0-aeb9-2c33580a447a^^(1,0.53333300352097,0.92691099643707,1)##RadialController^^b830bf20-ea7d-11f0-b6ee-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^b830bfa2-ea7d-11f0-b7e2-2c33580a447a^^(1,0.82765001058578,0.33333298563957,1)##RadialController^^b830c01a-ea7d-11f0-879a-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^b830c09c-ea7d-11f0-aba0-2c33580a447a^^(0.97991001605988,0.82222199440002,1,1)##RadialController^^b830c114-ea7d-11f0-8565-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^b830c196-ea7d-11f0-9b1a-2c33580a447a^^(0,0.18412299454212,0.71111100912094,1)##RadialController^^b830c20e-ea7d-11f0-81b4-2c33580a447a^^(0.60000002384186,0.12133199721575,0,1)##RadialController^^b830c290-ea7d-11f0-98ee-2c33580a447a^^(0.16078400611877,0.75686299800873,0,1)######PAGE: ^^aaaca39e-e0c5-11f0-8010-2c33580a447a^^Empty Layer^^(0.25,0.25,0.25,1)##SNAPSHOT BUTTON: 5839839e-ea7e-11f0-b164-2c33580a447a##ButtonSnapshot^^583983da-ea7e-11f0-8fb8-2c33580a447a^^##ButtonSnapshot^^5839d1aa-ea7e-11f0-ade7-2c33580a447a^^##ButtonSnapshot^^583a0e0e-ea7e-11f0-899f-2c33580a447a^^##ButtonSnapshot^^583a4b1c-ea7e-11f0-a91f-2c33580a447a^^##ButtonSnapshot^^583a83b6-ea7e-11f0-b225-2c33580a447a^^##ButtonSnapshot^^583ab872-ea7e-11f0-bad8-2c33580a447a^^##ButtonSnapshot^^583ae9aa-ea7e-11f0-86fa-2c33580a447a^^##ButtonSnapshot^^583b12f4-ea7e-11f0-86ae-2c33580a447a^^##GROUP SET MACRO: 583b5444-ea7e-11f0-87ce-2c33580a447a##ButtonSetMacro^^583b5458-ea7e-11f0-bd43-2c33580a447a^^0##ButtonSetMacro^^583b6fd8-ea7e-11f0-94ad-2c33580a447a^^1##ButtonSetMacro^^583b864e-ea7e-11f0-b7fb-2c33580a447a^^0##ButtonSetMacro^^583b9c6a-ea7e-11f0-b926-2c33580a447a^^0##ButtonSetMacro^^583baf70-ea7e-11f0-80e6-2c33580a447a^^0##ButtonSetMacro^^583bc24e-ea7e-11f0-9e9d-2c33580a447a^^1##ButtonSetMacro^^583bd2ca-ea7e-11f0-bf42-2c33580a447a^^0##ButtonSetMacro^^583be2d8-ea7e-11f0-86da-2c33580a447a^^0##ButtonSetMacro^^583bf278-ea7e-11f0-8854-2c33580a447a^^0##ButtonSetMacro^^583c025e-ea7e-11f0-b781-2c33580a447a^^-1##ButtonSetMacro^^583c1208-ea7e-11f0-b0a7-2c33580a447a^^0##ButtonSetMacro^^583c21da-ea7e-11f0-986b-2c33580a447a^^0##ButtonSetMacro^^583c318e-ea7e-11f0-8771-2c33580a447a^^0##ButtonSetMacro^^583c414c-ea7e-11f0-9bdd-2c33580a447a^^0##ButtonSetMacro^^583c50c4-ea7e-11f0-bebd-2c33580a447a^^0##ButtonSetMacro^^583c619a-ea7e-11f0-8fef-2c33580a447a^^0##GROUP SET MACRO: 583c8044-ea7e-11f0-80fa-2c33580a447a##ButtonSetMacro^^583c804e-ea7e-11f0-b2fa-2c33580a447a^^0##ButtonSetMacro^^583c900c-ea7e-11f0-99e4-2c33580a447a^^0##ButtonSetMacro^^583ca0f6-ea7e-11f0-bcf9-2c33580a447a^^1##ButtonSetMacro^^583cb0be-ea7e-11f0-bc23-2c33580a447a^^0##ButtonSetMacro^^583cc0b8-ea7e-11f0-a0a2-2c33580a447a^^0##ButtonSetMacro^^583cd0bc-ea7e-11f0-93d0-2c33580a447a^^0##ButtonSetMacro^^583ce052-ea7e-11f0-905a-2c33580a447a^^-1##ButtonSetMacro^^583cf060-ea7e-11f0-98c5-2c33580a447a^^0##ButtonSetMacro^^583d00fa-ea7e-11f0-abf2-2c33580a447a^^0##ButtonSetMacro^^583d11c6-ea7e-11f0-bc0b-2c33580a447a^^0##ButtonSetMacro^^583d2292-ea7e-11f0-b507-2c33580a447a^^0##ButtonSetMacro^^583d3264-ea7e-11f0-9816-2c33580a447a^^0##ButtonSetMacro^^583d43ee-ea7e-11f0-bbcc-2c33580a447a^^0##ButtonSetMacro^^583d5488-ea7e-11f0-8708-2c33580a447a^^0##ButtonSetMacro^^583d659a-ea7e-11f0-b42e-2c33580a447a^^0##ButtonSetMacro^^583d75bc-ea7e-11f0-808e-2c33580a447a^^0##GROUP RADIAL: 583886e2-ea7e-11f0-9069-2c33580a447a##RadialText^^5838896c-ea7e-11f0-a024-2c33580a447a^^43^^(1,0,0,1)##RadialText^^58388b2e-ea7e-11f0-b14a-2c33580a447a^^123^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58388c96-ea7e-11f0-bbc0-2c33580a447a^^100^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58388e12-ea7e-11f0-9e54-2c33580a447a^^61^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58388f48-ea7e-11f0-9bb8-2c33580a447a^^19^^(1,0,0,1)##RadialText^^5838907e-ea7e-11f0-8905-2c33580a447a^^127^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838918c-ea7e-11f0-8c21-2c33580a447a^^37^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^583892e0-ea7e-11f0-b2df-2c33580a447a^^69^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^5838942a-ea7e-11f0-8c31-2c33580a447a^^7^^(1,0,0,1)##RadialText^^5838952e-ea7e-11f0-9f0c-2c33580a447a^^93^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838963c-ea7e-11f0-9769-2c33580a447a^^76^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389740-ea7e-11f0-812a-2c33580a447a^^60^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^5838984e-ea7e-11f0-9db6-2c33580a447a^^34^^(1,0,0,1)##RadialText^^5838997a-ea7e-11f0-8797-2c33580a447a^^83^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58389a92-ea7e-11f0-af2c-2c33580a447a^^39^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389ba0-ea7e-11f0-a7c4-2c33580a447a^^7^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58389c22-ea7e-11f0-af05-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^58389cae-ea7e-11f0-946c-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58389d12-ea7e-11f0-a2e0-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389d76-ea7e-11f0-9131-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58389df8-ea7e-11f0-b145-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^58389e66-ea7e-11f0-810b-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^58389ee8-ea7e-11f0-8023-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^58389f6a-ea7e-11f0-aa50-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^58389fd8-ea7e-11f0-9446-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^5838a03c-ea7e-11f0-b1ff-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838a0a0-ea7e-11f0-a6ea-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^5838a10e-ea7e-11f0-a315-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialText^^5838a172-ea7e-11f0-bf2a-2c33580a447a^^Lbl^^(1,0,0,1)##RadialText^^5838a1d6-ea7e-11f0-a47f-2c33580a447a^^Lbl^^(0,0.97647100687027,0.58039200305939,1)##RadialText^^5838a23a-ea7e-11f0-b32e-2c33580a447a^^Lbl^^(0.6941180229187,1,0.26666700839996,1)##RadialText^^5838a2a8-ea7e-11f0-bc89-2c33580a447a^^Lbl^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialController^^5838880e-ea7e-11f0-91e0-2c33580a447a^^(1,0,0,1)##RadialController^^58388a5c-ea7e-11f0-bf55-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^58388c00-ea7e-11f0-b075-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^58388d4a-ea7e-11f0-bc8e-2c33580a447a^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialController^^58388ea8-ea7e-11f0-9e2e-2c33580a447a^^(1,0,0,1)##RadialController^^58388fd4-ea7e-11f0-9f80-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^58389100-ea7e-11f0-88b3-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^5838920e-ea7e-11f0-bfb4-2c33580a447a^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialController^^58389380-ea7e-11f0-943e-2c33580a447a^^(1,0,0,1)##RadialController^^583894ac-ea7e-11f0-8ec2-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^5838959c-ea7e-11f0-b575-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^583896b4-ea7e-11f0-a34e-2c33580a447a^^(0.29019600152969,0.37647101283073,0.99215698242188,1)##RadialController^^583897c2-ea7e-11f0-87bf-2c33580a447a^^(1,0,0,1)##RadialController^^583898d0-ea7e-11f0-a0a5-2c33580a447a^^(0,0.97647100687027,0.58039200305939,1)##RadialController^^58389a06-ea7e-11f0-817a-2c33580a447a^^(0.6941180229187,1,0.26666700839996,1)##RadialController^^58389b0a-ea7e-11f0-b926-2c33580a447a^^(0.29019600152969,0.37647101283073,0.99215698242188,1)###### ";
   
   self.parent:notify('load', savedMessage);  
 end]]></value>
@@ -54592,7 +54615,7 @@ To load all buttons values (snapshots and macros) :
  - display script of the LOAD button
  - replace the value of the variable "savedMessage" by the previous saved log
  - start the app
- - click on LAOD
+ - click on LOAD
 
 CAUTION : this action erase all values
 Save your project before
