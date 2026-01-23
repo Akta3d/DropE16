@@ -6,6 +6,7 @@
 - Avoid value jumps during overwriting a loopback
 - Possibility to play with other component during play a loopback record
 - Possibility to set the macro radial to 0, half, or full without changing radials values
+- Possibility to save a loop back record on session and on log
 
 ## [0.3] - 2026-01-11
 - Add record / play feature

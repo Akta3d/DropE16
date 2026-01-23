@@ -179,6 +179,7 @@ Here is what is saved:
     - Labels: Text and color
   - Snapshot values
   - Macro values
+  - Record loop
 
 Note: The MIDI configuration (channel and controller) cannot be saved. We recommend saving different versions of this layout if you want to have different configurations. Or add pages for all your configurations.
 
