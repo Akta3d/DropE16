@@ -3,6 +3,27 @@ DropE16 is a [TouchOSC](https://hexler.net/touchosc) MIDI Controller.
 
 <img width="1469" height="969" alt="DropE16" src="/doc-assets/DropE16.png" />
 
+## Table of Contents
+
+- [Demo](#demo)
+- [Interface](#interface)
+- [Motivation](#motivation)
+- [Features](#features)
+- [License](#license)
+- [How to Use](#how-to-use)
+  - [Change MIDI CC](#change-midi-cc)
+  - [Use Radials](#use-radials)
+  - [Use Snapshots](#use-snapshots)
+  - [Use Macros](#use-macros)
+  - [Use Record](#use-record)
+  - [Set BPM](#set-bpm)
+  - [Save / Load](#save--load)
+  - [Save Multiple Configurations Using "Logs"](#save-multiple-configurations-using-logs)
+- [How to Customize](#how-to-customize)
+- [How to update the TouchOSC layout](#how-to-update-the-touchosc-layout)
+- [Developer Notes](#developer-notes)
+- [Known issues](#known-issues)
+
 ## Demo
 <img width="1468" height="974" alt="Interface" src="/doc-assets/Demo2.gif" />
 
@@ -113,9 +134,13 @@ Examples:
 ## Use Macros
 
 - Press the **Set** button of the desired macro  
-  → Small buttons appear next to each radial
-- Single-click a button to assign the radial to the macro
-- Double-click a button to invert the control value
+  → Small buttons appear next to each radials
+- Single-click a button to assign the radials to the macro
+- Double-click a button to invert the radials value
+
+When you move a macro, the values of the radials are modified relatively. For example, if the macro changes by 0.1, all connected radials will be modified by 0.1. This is not an absolute value.
+
+You can change the position of the macro to 0, half, or full by clicking on the small round buttons below the macros.
 
 <img width="1468" height="974" alt="Interface" src="/doc-assets/Macro.gif" />
 
@@ -154,6 +179,7 @@ Here is what is saved:
     - Labels: Text and color
   - Snapshot values
   - Macro values
+  - Record loop
 
 Note: The MIDI configuration (channel and controller) cannot be saved. We recommend saving different versions of this layout if you want to have different configurations. Or add pages for all your configurations.
 
@@ -213,6 +239,14 @@ This process saves, for each page:
 - Position the macro radial where desired
 - Open **`groupSetMacro`** and reposition all buttons  
   *(this step requires careful placement)*
+
+---
+
+# How to update the TouchOSC layout without losing my MIDI mapping
+From your current layout version, copy the group groupRadial of each page.  
+Then, on the new layout version, delete and paste all these groups.
+
+There is no script in these components.
 
 ---
 
@@ -287,5 +321,3 @@ The button contains the logs to reload then call the `load` function in `groupSe
 **Load / Save from Log**  
 The MIDI configuration (channel and controller) cannot be saved. We recommend saving different versions of this layout if you want to have different configurations. Or add pages for all your configurations.
 
-**Record / Play**  
-When looping a recording and in recording mode, if you modify a controller that already had movement, it is possible to experience value jumps. ToushOSC attempts to update the controller while you are manipulating it, which causes jumps depending on the performance of your device.
